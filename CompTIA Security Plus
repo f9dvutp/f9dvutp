@@ -2209,6 +2209,110 @@ QSFP = 4xSFP = 4 Gbps
 QSFP+ = 4xSFP = 40 Gbps
 
 
+openfiles /local on
+
+Auditing is a detective control.
+
+log files /var/log directory in linux
+
+To consolidate all the logs into a single repository, you can use SYSLOG
+
+Syslog is a protocol used for sending and receiving log messages between network devices, servers, and applications. It is a standard protocol that is widely used in the IT industry.
+
+Setting up Syslog on Windows involves the following steps:
+
+    Choose a Syslog server software to use. There are several options available such as Kiwi Syslog Server, SolarWinds Syslog Server, and Graylog.
+
+    Install and configure the Syslog server software on a Windows Server.
+
+    Configure the Syslog server to listen for incoming Syslog messages on the appropriate port (usually UDP port 514).
+	
+	
+	
+Write Once Read Many (WORM) - Technology like a DVD-R that allows data to be written only once but read unlimited times.
+
+SIEM tools -  ARCSIGHT, AlienVault and Cue Radar.
+
+Data Aggregation - Combines data from various network devices, servers, and appliations from across the enterprise network.
+Data Correlation - Automatically looks for common attributes of events across the monitored portions of the network.
+
+SIEMs may also perform regulatory audits and forensic analysis functions.
+
+algorithm - how to encrypt / decrypt something.
+
+
+Symmetric Algorithm (Private Key) Encryption algorithm in which both the sender and the receiver must know the same secret using a privately held key.
+Confidentiality can be assured with symmetric encryption.
+NON Repudiation can not be assured with symmetric encryption.
+key distribution can be challenging with symmetric encryption.
+
+Symmetric Algorithms - DES, 3DES, IDEA, AES, Blowfish, Twofish, RC4, RC5, RC6.
+
+Asymmetric Encryption (Public Key)
+Encryption algorithm where different keys are used to encrypt and decrypt the data.
+Asymmetric Algorithms include Diffie-Hellman, RSA and ECC
+
+Symmetric is 100-1000x faster than asymmetric
+
+Hybrid Implementation - Utilizes asymmetric encryption to securely transfer a private key that can then be used with symmetric encryption.
+The US government has approved several cryptographic algorithms for use in creating digital signatures. One of the most commonly used algorithms is the Digital Signature Algorithm (DSA), which was developed by the National Institute of Standards and Technology (NIST).
+
+Affinity scheduling is a load balancing technique used by some load balancers to maintain session persistence, also known as sticky sessions. With affinity scheduling, the load balancer directs subsequent requests from a client to the same server that served the initial request.
+
+Bcrypt is designed to be computationally intensive and memory-hard, making it more difficult for attackers to crack passwords through brute-force attacks, dictionary attacks, or other common password cracking methods. Bcrypt is a password hashing function that incorporates a salt value, which makes it even more resistant to attacks.
+
+In a RAID 5 six-disk array, one disk is used for parity data, and the remaining five disks store data. The parity data is used to reconstruct lost data if one of the disks fails.
+
+Since RAID 5 can tolerate the failure of only one disk without data loss, the maximum number of disks that can fail in a RAID 5 six-disk array is one. If more than one disk fails simultaneously, data loss will occur.
+
+
+CBC (Cipher Block Chaining Mode) - In CBC mode, each plaintext block is XORed with the previous ciphertext block before encryption. This creates a chain of dependent blocks, where each block depends on the previous block. CBC mode requires an initialization vector (IV) to be used for the first block, and it is susceptible to padding oracle attacks and error propagation.
+
+WPA (Wi-Fi Protected Access) uses a more advanced cryptographic technique called TKIP (Temporal Key Integrity Protocol) to overcome the weaknesses in the WEP (Wired Equivalent Privacy) algorithm
+
+TOTP - Time-based One-Time Password algorithm
+Use a secret key and the time of day.
+No incremental counter
+Secret key is configured ahead of time
+Timestamps are synchronized via NTP
+
+HOTP - One Time Passwords
+Use them once and never again
+Once a session, once each authentication attempt.
+
+FAR - False Acceptance Rate - 
+Likelihood that an unauthorized user will be accepted
+Not sensitive enough
+
+Internet Key Exchange (IKE) is a protocol used to establish a secure, authenticated communication channel between two devices over an IP network. It is used in combination with the IPsec protocol to provide secure communication.
+
+There are three modes of IKE, which are Main mode, Aggressive mode, and Quick mode:
+
+Main mode: In this mode, a total of six messages are exchanged between the devices to establish a secure channel. Main mode is considered more secure because it provides more opportunities for security checks.
+
+Aggressive mode: In this mode, only three messages are exchanged between the devices, which makes it faster than Main mode. However, it is considered less secure than Main mode because there are fewer opportunities for security checks.
+
+Quick mode: Once the secure channel has been established using Main or Aggressive mode, Quick mode is used to negotiate the parameters for the actual data transmission. This mode is quicker than the other two modes because it involves fewer messages.
+
+Overall, IKE provides a secure and efficient method of establishing a secure communication channel over an IP network, and the choice of mode depends on the specific requirements of the situation.
+
+CRC, CRL, CA, and CSR are all related to the security infrastructure of digital certificates, which are used to establish secure communication between parties over a network.
+
+CRC: CRC stands for Cyclic Redundancy Check, which is a technique used to detect errors in digital data transmission. It is not directly related to digital certificates.
+
+CRL: CRL stands for Certificate Revocation List, which is a list of digital certificates that have been revoked before their expiration date. CRLs are maintained by Certificate Authorities (CAs) and are used to check if a digital certificate is still valid and has not been revoked.
+
+CA: CA stands for Certificate Authority, which is a trusted third-party organization that issues digital certificates to entities or individuals after verifying their identity. A CA is responsible for creating, signing, and publishing digital certificates.
+
+CSR: CSR stands for Certificate Signing Request, which is a message sent by an entity or individual to a CA to request a digital certificate. A CSR contains the entity's public key and other identifying information that the CA will use to create a digital certificate.
+
+In summary, CRC is a method for detecting errors in data transmission, while CRL is a list of revoked digital certificates. CA is a trusted third-party organization that issues digital certificates, and CSR is a message sent to a CA to request a digital certificate.
+
+A .dd image is a type of disk image file that contains an exact copy of the contents of a storage device such as a hard drive, USB flash drive, or memory card. The "dd" in the file extension stands for "disk dump," which refers to the process of copying all of the data from a storage device to a file.
+
+The .dd image file format is often used in computer forensics and data recovery to preserve the original data on a storage device without altering it in any way. This makes it possible to analyze the data and recover deleted files or other information that may be hidden or difficult to access through other means.
+
+The .dd image file format can be created using various disk imaging tools, including the open-source utility "dd," which is available for many operating systems. These tools allow users to create a bit-for-bit copy of a storage device, including any partition tables, boot sectors, and other low-level data structures. The resulting .dd image file can then be analyzed or mounted as a virtual disk for data recovery or forensic analysis purposes.
 
 
 
