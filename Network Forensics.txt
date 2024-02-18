@@ -1,0 +1,115 @@
+Network Forensics - Jungwoo Ryoo -
+Ubuntu stores firewall logs at the var log sys log directory
+sudo tail -f var log syslog | grep -i ufw 
+ufw stands for uncomplicated firewall
+
+Linux uses Syslog
+rsyslog is a newer variation of syslog
+rsyslog configuration file at the /etc/rsyslog.conf 
+nano /etc/rsyslog.conf
+control - x to exit file
+nano /etc/rsyslog.d/50-default.conf
+
+mair.err      /var/log/mail.err
+facility
+
+.err stand for error 
+other levels include .emerg, .alert, .crit , .warn
+.notice .info .debug .etc 
+
+sudo nano /etc/rsyslog/conf
+
+uncomment module and input lines
+sudo service rsyslog restart
+
+sudo nano /etc/rsyslog.d/50-default.conf
+
+
+syslog-ng
+.n - next generation
+
+sudo apt-get install syslog-ng
+sudo service syslog-ng start
+sudo service syslog-ng status
+
+cd/ /etc/syslog-ng/
+ls
+syslog-ng.conf
+sudo nano syslog-ng.conf
+sudo service syslog-ng restart
+sudo service syslog-ng start
+
+
+Microsoft Log Parser
+
+
+Log Parser Feautres - Ability to run SQL like queries again event viewer logs, Active Directory, and Windows Registry
+Microsoft Log Parser has to be turned on in Services
+
+btmp is a binary file, which requires a special tool to open it.
+
+Google.com IP Address Ranges
+64.233.160.0 - 64.233.191.255
+
+ARP Poisoning on Kali Linux - echo '1' > /proc/sys/net/ipv4/ip_forward
+arpspoof -i eth0 -t 10.35.4.149 10.35.4.150
+d/50-default
+driftnet -i eth0
+
+Domain Name Service (DNS)
+Application layer protocol uses UDP
+
+Log Parser Lizard
+Kiwi Syslog Server
+Kiwi Syslog Web Access
+LPL quick Query
+
+nslookup www.linkedin.com
+
+
+Network Forensics Tools
+tcpdump and WinDump
+Unix / Linux - libpcap
+Windows - WinPcap
+
+Tcpdump and Wireshark
+Tcpdump is preinstalled on Ubuntu
+
+ifconfig
+tcpdump -D
+WinDump -D
+sudo tcpdump -s 0 port ssh
+
+ssh instructor@10.35.4.150
+
+sudo tcpdump -s 0 port ssh -w sample.pcap (Sending results to a file)
+
+sudo wireshark -i ens18 -k
+
+
+
+SIEM - Security Information and Event Management
+Monitors, logs, and analyzes network security events in real time
+Ultimate goal - Alerts human operators when suspicious or anomalous activites detected.
+
+IBM Security QRADAR
+RSA NetWitness Suite
+Solarwinds Log & Event Manager
+
+
+Nitemyst
+·
+2 days ago
+one thing that I found that can be a HUGE help is called "tldr" it should be install-able via any distro via CLI.
+
+command use example
+
+"tldr lspci " (no quotes)
+will give you the following;
+
+
+
+tldr lspci
+
+lspci
+List all PCI devices.
