@@ -1,0 +1,1883 @@
+CompTIA Security+ SY0-601 Cert Prep 1
+Threats, Attacks and Vulnerabilities
+
+Security + Study Guide - Mike Chappelle / David Seidl
+https://certmike.com
+
+Malware - Propagation Mechanism - The way that a malware object spreads
+Payload - The malicious action that the malware performs
+Any malware object can carry any payload
+
+Worms - Spread by themselves
+
+RTM Worm 1988 - Robert T Morris - 
+Stuxnet - Created in 2010 - Infiltrated Iranian nuclear facility
+Remote Access Trojans RAT -
+
+Viruses - Spread through human interaction
+Worms - Spread by themselves
+Trojan Horses - Pose as beneficial software
+
+Adware - Displays advertisements
+Change the default seach engine
+Displaying pop-up advertisements
+Replacing legitimate ads with other ads
+
+Spyware - Gathers information without the user's knowlege or consent
+Logging keystrokes
+Monitoring web browsing
+seaching hard drives and cloud storage
+
+PUPs - Potentially unwanted programs are slipped into a system by other software installers
+
+Ransomware - Blocks access - Encrypting Hardrive - WannaCry2017 Exploited the EnternalBlue Windows vulnerability
+Encrypts files, demands Bitcoin ransom - Uses cryptography
+
+Cryptomalware - Mines cryptocurrency - steals compute power
+
+Prevent Malware
+- Antimalware Software
+- Security Patches
+- Educate End users
+
+Payloads
+Adware - Displays Advertisements
+Spyware - Gathers information
+Ransomware - Blocks Access
+Cryptomalware - Mines cryptocurrency
+
+Backdoor - Provide workaround access 
+Backdoor mechanisms include Hardcoded accounts, Default Passwords, Unknown access channels
+Logic Bomb - Deliver a triggered payload
+Date / Time Reach
+File contents 
+API call
+
+Friday the 13th Logic Bomb
+
+Backdoors - Provide workaround access
+Logic Bombs - Deliver a triggered payload
+
+Root Account - A special superuser account that provides unrestricted access to system resources
+Rootkits - Escalate user privileges
+
+Rootkit Payloads
+Backdoors
+Botnet agents
+Adware / Spyware
+Antitheft Mechanism
+
+Ring Protection Model - 
+
+
+User Mode vs. Kernel Mode
+User mode rootkits
+- Run with nromal user privileges
+- Are easy to write and difficult to detect
+
+Kernel mode rootkits
+Run with system privileges
+Are difficult to write and easy to detect
+
+Fileless Viruses - Remain in Memory
+- Microsoft Office macros
+- JavaScript Code
+- Windows Registry persistence
+
+Botnet - Network of infected machines
+- Renting out computing power
+- Delivering Spam
+- Engage in DDos Attacks
+- Mining Cryptocurrency
+- Wagering brute force attacks
+Botnet Command and Control
+Communication must be indirect and redundant
+Internet Relay Chat (IRC)
+Twitter 
+Peer to peer within botnet
+
+Botnet
+1. Infect systems
+2. Convert to bots
+3. Infect others
+4. Check in
+5. Get Instructions
+6. Deliver payload
+
+
+A script is a sequence of instructions written in a programming language to automate our work
+Shell Scripts - Run at the command line and integrate with the operating system
+Application Scripts - Run within a software application and integrate with that application
+Programming Languages - Allow the creation of general purpose code
+
+
+Scripting Languages
+Bash is a scripting language used on Linux and Mac systems
+PowerShell provides scripting capabilities for windows systems
+Visual Basic is a macro scripting language used with Microsoft Office
+Python is a general purpose programming language used to create a diverse set of scripts
+
+Differentiating Attackers
+Internal vs. external attackers
+Level of sophistication
+Access to resources
+Motivation
+Intent
+
+Script Kiddies are unskilled attackers who simply reuse hacking tools developed by others
+Hacktivists seek to use hacking tools to advance political and social agendas.
+
+Criminal syndicates use hacking tools, such as ransomware for financial gain
+Competitors may use hacking tools and techniques for corporate espionage purposes.
+
+Nation-state actors sponsor highly sophicated advanced persistent threat (APT) groups
+
+Cybersecurity Adversaries
+White Hats - Operate whti permission and good intent
+Black Hats - Operate illegally with malicious intent
+Grey Hats - Operate without permission but with good intent
+
+Insider Threat - 51% of organizations experiencing a security breach suffered an insider attack.
+67% of insider breaches where more costly than external attacks
+
+
+Perform background checks to uncover past legal issues
+Give users only the permissions that they need
+Require mulitple users to carry out sensitive operations
+Implement mandatory vacations for critical staff
+
+
+Shadow IT is the use of information technology systems, devices, software, applications, and services without explicit IT department approval. It has grown exponentially in recent years with the adoption of cloud-based applications and services.
+
+Attack vectors
+Attack vectors - Provide an attack path - 
+Email - Attackers use email to send phishing messges and mailicious content
+Social Media can spread malware and be used as part of an influence campaign
+
+
+
+USB cables can also contain malicious content in an embedded chip
+
+
+Attackers scan cloud services for improperly secured content and systems
+Attackers with direct access to systems and networks can easily compromise them
+Wireless networks allow attackers to remotely attack an organization's network
+
+Zero days and the advanced persistent threat
+
+Patches protect against many cybersecurity vulnerabilities
+Undiscovered security vulnerabilities lurk in existing code
+
+Ethical Disclosure
+1. Notify the vendor of the vulnerability
+2. Provide the vendor a reasonable amount of time to create a patch
+3. Disclose the vulnerability publicly.
+
+Zero-Day Vulnerability - A vulnerability in a product that has been discovered by a least one reseacher but has not yet been patched by the vendor.
+
+Window of Vulnerability - The time between the discovery of a zero-day vulnerability and the release of a security update
+
+Advanced Persisten Threats (APTs)
+Are well-funded and highly skilled
+Are typically government sponsored
+Have access to zero days and other sophisticated weapons
+Work methodically to gain access to a target
+
+Defend against APTs is Difficult
+Build a strong security foundation
+Implement strong encryption
+Use rigorous monitoring
+
+
+
+
+
+
+
+
+Card skimmers read magnetic stripes which may then be used in card cloning attacks
+
+Flash drives and other removable media may contain malware that triggers when inserted into a new device
+
+
+Threat Intelligence allows teams to stay up to date on current risks.
+Threat Intelligence is the set of activities that an organization undertakes to educate itself about changes in the cybersecurity threat landscape, and adapt security controls based upon that information.
+
+Open-Source Intelligence - Uses public information
+Sources Include
+Security Websites
+Vulnerability databases
+News Media
+Social Media
+Dark Web
+Information sharing centers
+File Repositories
+Code repositories
+Security researches
+
+Email Address Harvesting - Search for valid addresses
+Many security companies offer proprietary and closed-source threat intelligence solutions
+Timeliness - How promptly is threat intelligence delivered
+Accuracy - Is the data correct?
+Reliability - Is the provider consistent?
+
+Threat indicators - IP addresses, malicious file signatures.
+
+Threat information is only useful if we can share it.
+
+
+Cyber Observable eXpression (CybOX)
+Structured Threat Information eXpression (STIX)
+Trusted Automated eXchange of Indicator Information (TAXII)
+
+OpenIOC -Mandiant threat framework
+Fireeye
+Security tools and services should support these information standards
+
+TAXII, STIX, CYBOX facilitate information sharing
+
+Functions Supported by Intelligence
+Incident Response
+Vulnerability Management
+Risk Management
+Security Engineering - Design controls to combat emerging threats
+Detection and monitoring
+
+ISACs - Information Sharing and Analysis Centers
+Brings cybersecurity teams from competing organizations help share industry-specific security information (such as food industry)
+Information Sharing and Analysis Centers (ISACs) were created as a result of Presidential Decision Directive 63 (PDD-63) in 1998. The directive requested the public and private sector create a partnership to share information about threats, vulnerabilities, and events to help protect the critical infrastructure of the United States. PDD-63 was updated in 2003 with Homeland Security Presidential Directive 7 (HSPD-7) to reaffirm the partnership mission.
+
+
+Threat research uses threat intelligence to get inside the minds of our adversaries
+Reputational Threat Research - Identify potentially malicious actors based upon their use of IP address, email address, domains, etc. that were previously used in attacks.
+
+
+Behavioral Threat Research - Identify potentially malicious actors based upon the similarity of their behaviours to past attackers
+
+
+Research Sources
+Vendor Websites
+Vulnerability feeds
+Cybersecuirty conferences
+Academic Journals
+RFC documents
+Local industry groups
+Social Media 
+Threat Feeds
+
+TTP - Tools, Techniques and Procedures
+
+Threat Management - Use a structured approach to threat managemnt
+
+Asset Focus - Use the asset inventory as the basis for the analysis
+Threat Focus - Identify how specific threats may affect each information system
+Service Focus - Identify the impact of various threats on a specific service
+
+Automating threat intelligence - Automate the blacklisting of IP addresses from threat feeds
+Investigating anomalous activity
+
+Data Enrichment - Automatically supplements incident data
+example
+Perform source address reconnaissance - IP address ownership and Geolocation information
+Retrieve related log records
+Trigger a vulnerability scan
+
+Security Orchestration, Automation, and Response (SOAR) platforms enhance SIEM capabilities
+Machine learning allows the automated creation of malware signatures
+
+In today's treat landscape, we make the "assumption of compromise"
+
+
+Threat hunting is an organized, systematic approach to seeking out indicators of compromise on our networks using expertise and analytic techniques.
+
+Indicators of Compromise 
+Unusual Binary files
+Unexpected processes or resource consumption
+Deviations in network traffic
+Unexplained log entries
+Unapproved configuration changes
+
+After discovering a compromise, move into incident response
+
+Social Engineering - Manipulating people into divulging information or performing an action that undermines security.
+
+
+Six reasons why Social Engineering works:
+Authority - Authority and Trust - People defer to authority
+Intimidation - Intimidation - Scaring People
+Consensus / Social Proof - The herd mentality
+Scarcity - Getting the last one
+Urgency - Time is running out
+Familiarity / Liking - We say yes to people we like
+
+User Education is the solution
+
+Stanley Milgram
+Kevin Mitnick - The Art of Intrusion
+
+Spam - Unsolicited Commericial Email (UCE)
+Spam is illegal under the CAN-SPAM act
+
+Prepending attacks seek to impersonate security filters
+
+Spear Phishing - Targeted Attack - Invoice Scams
+Whaling - Targeted attackes on executives - Send fake court documents is being sued
+Pharming - Using fake websites
+DNS Poisoning - Redirect users to fake site
+Vishing - Voice phishing 
+
+Smishingand SPIM - SMS and IM spam
+
+Spoofing - Faking an identity of someone else when sending a message.
+
+Impersonation Attacks 
+
+Identity fraud and pretexting
+
+Pretexting Attacks - Impersonate a consumer
+
+Users trust the websites they visit, to some extent
+Browsers and add-ons often have vulnerabilities
+Client Side attacks - 
+Users are conditioned to click OK on security warnings
+
+Blacklisting 
+
+
+Watering Hole Attack
+1. Identify and compromise a highly targeted website
+2. Choose a client exploit and bundle a botnet
+3. Place the malware on the compromised website
+4. Sit back and wait for infected systems to phone home
+
+Physical social engineer
+Shoulder Surfing - Watching over someone's screen - Be aware of your surroundings and use privacy filter
+Dumpster Diving - Digging through the trash - contains sensitive information - Shed sensitive documents before discarding them.
+Tailgating - Slipping in behind someone 
+
+Password attacks undermine system and information security
+Linux is /etc/passwd: Password file is a hash - remove password hashes 
+/etc/ shadow: Shadow File
+
+Hash Function mathematical function that converts a variable-length input into a fixed-length output
+
+Hash Function Criteria
+It must produce a completely different output for each input
+It must be computationally difficult to retrieve the input from the output
+It must be computationally difficult to find two different inputs that generate the same output
+
+The Birthday Problem
+- Collisions become common with large samples
+What are the odds two people in a room will share a birthday
+100% with 367 people
+50% with only 23 people
+99.9% with 70 people
+
+Brute Force Attacks - Short password - Try all possibilities
+Dictionary Attacks - Try English words first
+Hybrid Attacks - 
+Rainbow Table Attack - Precomputes hash values
+
+Add accounts to Linux
+sudo useradd matt
+sudo passwd matt
+
+cat /etc/passwd
+sudo cat /etc/shadow
+
+sudo ./unshadow /etc/passwd /etc/shadow > passwords
+cat ./passwords
+John the Ripper password crack
+sudo ./john passwords
+
+Password Spraying and credential stuffing
+Exploits common passwords
+Prohibit the use of common passwords
+
+Credential Stuffing - Exploits reused passwords - Reuse the same password across multiple sites
+The reuse of passwords across multiple sites makes an individual susceptible to credential stuffing
+
+Use a password manager to generate and maintain unique passwords
+
+Multi-Factor authentication stops password spraying and credential stuffing attacks
+
+Adversarial artificial intelligence
+Machine Learning - Discover knowledge in data
+
+Descriptive analytics seek to describe our data
+Prescriptive analytics use simulation to optimize our behavior
+
+Adversarial AI - Exploit AI techniques
+Breach confidentiality of machine learning algorithms
+Inject tainted data into training processes
+Fool deployed algorithms
+
+Build robust AI models that will withstand adversarial attacks
+
+6. Understanding Vulnerability Types
+CIA Triad - Confidentiality, Integrity, Availability
+
+Confidentiality Protects information and systems from unauthorized access
+Disclosure attacks seek to undermine confidentiality
+Data breaches are violations of confidentiality
+Data exfiltration removes sensitive information from an organization's controls https://en.wikipedia.org/wiki/Data_exfiltration
+
+Integrity Protects information and systems from unauthorized modification
+Alteration attacks seek to undermine integrity
+
+Availability - Ensures that information and systems are available for authorized users when needed
+Denial attacks seek to undermine availability
+
+Financial risks involve monetary loss to the organization
+Reputational risk impacts how stakeholders view our organization
+
+Strategic risk jeopardizes our ability to meet our major goals and objectives
+Operational risk affects our ability to carry out day-to-day activities
+
+Compliance risk involves potential violations of laws or regulations
+HIPAA - Healthcare Insurance Portability and Accountability Act
+
+Supply chain vulnerabilities
+Security issues may arise in the supply chain
+End of life announcements by vendors
+Running products that lack vendor support introduces significant security risks
+
+1. End-of-sale - Product will no longer be offered for purchase, but the vendor will support existing customers
+2. End-of-Support - The vendor will reduce or eliminate support for existing users of the product
+3. End-of life - The vendor will no longer provide any support or updates for the product. https://en.wikipedia.org/wiki/End-of-life_product
+
+Vendors may fail to provide adequate support for existing products
+
+Configuration vulnerabilities have a significant impact on security
+Default configurations may contain misconfigured firewalls, unnecessarily open permissions, guest accounts, default passwords, or unsecured root accounts
+Follow documented security standards and baselines when configuring systems and applications
+
+Cryptographic Vulnerabilities
+Weak cipher suites
+Weak cryptographic protocol implementations
+Poor key management
+Poor certificate management
+Patch Management - Operating systems, Applications, Firmware
+Carefully manage the permissions assigned to accounts to prevent accidental or intentional misuse.
+
+Least Privilege - Limits user permissions
+
+Architectural Vulnerabilities
+Architectural vulnerabilities arise when a system is imporoperly designed
+
+IT Architecture - Processes and practices used to design systems
+
+Incorporate security early. Avoid bold-on security requirements
+Untrained users and weak business processes can be just as dangerous as technical flaws
+
+System Sprawl - New devices are connected to a network, but old devices are not promptly disconnected, leading to security vulnerabilities
+System sprawl is even more risky when assets are undocumented.
+
+
+Linux kernel contains over 24 million lines of code
+Thousands of lines change every day
+
+Vulnerability Patching Processes
+1. The company learns of a vulnerability
+2. Developers analyze the issue and develop a patch
+3. The company releases the patch to customers
+4. Customers apply the patch to remediate the vulnerability
+
+Vulnerability Management
+Detects, remediates, and reports vulnerabilities
+
+Why Manage Vulnerabilities -
+Maintain system security
+Comply with corporate policy
+Comply with regulatory requirements
+
+The Payment Card Industry Data Security Standard, PCI DSS
+Conduct quarterly internal and external vulnerability scans
+Repeat scans after any significant change
+Use an approved scanning vendor (ASV)
+Remediate and rescan until you achieve a clean report
+
+FISMA - Federal Information Security Management Act Follow controls from NIST Special Publication 800-53
+Conduct vulnerability scans regularly
+Analyze the results of scans
+Remediate legitimate vulnerabilities
+Share information with other agencies
+
+Network Vulnerability Scans
+Application Scans
+Web Application Scans - SQL injection and cross-site scripting
+
+Supplement vulnerability scans with configuration and log reviews
+
+What is Vulnerability Management
+
+Asset Inventory - Provides the starting point for vulnerability scanning
+Vulnerability scanners can geneerate system inventories
+
+Nessus Essentials
+Qualys Inventory Scanner
+
+Impact - What is the highest data classification handled by the system?
+Likelihood - What is the network exposure
+What services are exposed
+Criticality - What impact does the system have on business operations
+
+You need an asset inventory even if you choose to scan all of your systems
+
+Scan Perspective
+Scan Results may differ based upon the scan perspective
+
+
+Scan Perspective - Where the scanner is located on the network
+Agent-Based Scanning - Installs software on each target device
+Credentialed Scanning - Uses passwords to log into systems
+
+All refer to the same thing- Web application vulnerability, SQL injection issue, Input validation flaw
+
+Severe, Critical, Urgent
+
+SCAP - Security Content Automation Protocol 
+CVSS - Common Vulnerability Scoring System -- Scores vulnerabilities on a 10-point scale
+CCE - Common Configuration Enumeration 
+CPE - COmmon Platform Enumeration - different name to refer to different products and vendors - SCAP component would best to reconciling differences
+CVE - Common Vulnerabilities and Exposures
+XCCDF - Extensibile Configuration Checklist Description Format
+OVAL - Open Vulnerability and Assessment Language
+
+Attack Vector (AV)
+Rating									Description
+Physical(P)								Physical touch / Manipulation is required
+Local (L)								Physical or logical console access is required
+Adjacent Network (A)					Local network access is required
+Network 								Remotely exploitable vulnerability
+
+Attack Complexity (AC)
+Rating									Description
+High (H)								Requires specialized conditions
+Low (L)									Does not require specialized conditions
+
+Privileges Required (PR)
+Rating									Description
+High (H)								Requires administrative control
+Low (L)									Requires basic user privileges
+None (N)								Requires no prior privileges
+
+User Interaction (UI)
+Rating									Description
+Required (r) 							Requires that a user take some action
+None (N)								Does not require user interaction
+
+The AV, AC, PR, and UI metrics combine to describe the exploitability of a vulnerability
+
+Confidentiality (C)
+Rating									Description
+None (N)								No confidentiality impact
+Low (L)									Access to some information is possible
+High (H)								All information is compromised
+
+Integrity (I)
+Rating									Description
+None (N)								No integrity impact
+Low (L)									Modification of some information is possible
+High (H)								All information is compromised
+
+Availability
+Rating									Description
+None (N)								No availability
+Low (L)									Performance is degraded
+High (H)								The system is shut down
+
+C - I and A metrics combine to describe the impact of a vulnerability
+
+Scope (S)
+Rating									Description
+Changed (C)								Exploiting the vulnerability can affect other components.
+Unchanged (U)							Exploiting the vulnerability only affects resources managed by the same secuirty authority
+
+
+Analyzing scan reports
+Cybersecurity analysts need to present different information to different audiences
+
+Prioritization Factors
+Vulnerability severity
+System criticality
+Information sensitivity
+Remediation difficulty
+System exposure
+
+Vulnerability Validation - Confirms accuracy
+Is the report a false positive?
+
+Scanner Reports - 
+Is the vulnerability a documented exception?
+
+
+Vulnerability Outcomes
+			Vulnerability Reported					Vulnerability Not Reported
+Exist			TRUE POSITIVE							False Negative
+Doesnt Exist	False POSITIVE							True Negative
+
+Correlate scan results with other sources of information
+Consult industry standards, best practices, and compliance requirements
+
+							PCI DSS CVSS SCORES
+CVSS SCORES						Severity Level 				Scan Results
+0-3.9								Low							Pass
+4-5.9								Medium						Fail
+6-9.9								High						Fail
+10									Critical					Fail
+
+Technical Information Sources
+Configuration management systems
+Log repositories
+Other data sources
+
+Watch for historic trends in your scans
+
+
+Penetration Testing and Exercises
+The goal of a penetration test is to successfully defeat security controls
+Document the rules of engagement before beginning a penetration test - Should be written down in rules of engagement or ROE
+RULES OF ENGAGEMENT FOR CYBERSECURITY PENETRATION TESTING
+
+Purpose. The purpose of this document is to establish the rules of engagement (ROE) for cybersecurity penetration testing activities conducted by [Company Name] or its agents. (from Chatbot)
+
+White Box - Attackers have full access to information before they begin the test (simulate an internal attack)
+Black Box - Attackers have no information about the target before the begin the test (simulate an external attack)
+Grey Box - Attackers have limited information before they begin the attack
+
+NIST Penetration Testing Process  NIST recommend loop back and forth between discovery phase and an attack phase
+Discovery Phase - Attackers conduct Reconnaissance footprinting, wardialing, Warflying takes wardriving to the air with drones and UAVs https://en.wikipedia.org/wiki/Warflying
+Attack Phase - Gaining access - Escalating Privileges - System Browsing (lateral movement) - Install Additional Tools
+
+Pivot - After exploiting a vulnerability in a system, attackers use that system as a base from which to target other systems on the same local network.
+Persistence - After exploiting a vulnerability in a system, attackers install tools on that system to allow future access - even if the initial vulnerability is corrected
+
+Clean up at the end of the attack
+Penetration test provide valuable insights, but they are labor intensive
+
+Bug bounty Programs - Open security testing
+Logs show that attackers probe our systems on a continuous basis
+Many of these attacks are simply automated scan probing for vulnerabilities
+Bug bounty programs allow you to harness the work of hackers for your own purposes
+https://nvd.nist.gov/vuln/detail/CVE-2022-20465
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20465
+
+Hackerone.com
+Vendors offer both self-managed and fully-managed bounty programs
+
+Hacking 
+Red Team - Attackers who will try to undermine security
+Blue Team - Defenders who will secure the systems from attack
+White Team - Observers and judges who manage the exercise, establishes the rules of engagement for a cybersecurity excercise
+
+Purple Team - Combines knowledge for the red and blue team during a lessons - learned session after the excercise
+Capture the Flag excercise
+F
+Set up safe sandbox
+
+Cert Prep 2 - Secure Code Design and Implementation
+certmike.com
+Winston Royce 1970 Waterfall Model
+Barry Boehm of TRW - Spiral Model  - What software development methodology uses four stages in an iterative process?
+Agile Software development
+CMMI - Capability Maturity Model Integration
+
+IDEAL Model - Initiating, Diagnosing, Establishing, Action, Learning
+
+Change Management - Request Control, Change Control, Release Control
+DevOps - Development Operations - Rapidly release code Change bring instability - Devops - Improve the interactions between software developers, and technology operations teams
+Build collaborative relationships, Embrace automation, facilitate rapid release of code
+DevOps and Agile are related, both seek continouous integration
+
+What phase of the capability maturity model introduces the reuse of code across projects? - Managed
+
+Infrastructure as Code - Scripts the creation of resources
+- Increases scalability of environments
+- Reduces user error
+- Facilitates testing of new code
+
+DevOps facilitates security automation
+DevSecOps applies DevOps techniques to a cybersecurity program.
+
+Continuous validatation - Testing as soon as developers update code
+Continuous integration - maintains linkages between different code elements
+Continuous delivery - moves code into the proper environments
+Continuous deployment - releases code for production use
+Continuous monitoring that ensure that code is working properly and trigger automated remediation if issues arise
+
+
+What component of a change management program includes final testing that the software functions properly? - Release Management
+
+ 
+FALSE - The DevOps model prioritizes development efforts over operational tasks.
+
+
+Code Review - Use peer analysis to assess code
+Fagan inspection follow a formalized, six step cod review process - Most organizations use a less formal review process
+Planning - The planning phase includes preparing materials, identifying participants, and scheduling the review
+Overview - The overview phase includes assigning roles to participants and providing an overivew of the software
+Preparation - During the preparation phase, participants independently examine the code for potential defects
+Meeting - During the inspection meeting, reviewers discuss and formally identify any code defects
+During the rework phase, the code developers correct and defects identified during the inspection
+Follow up - During the Follow-up phase, the leader verifies that defects were resolved and completes project documentation
+
+
+Validation - Software model validation - Are we building the right software?
+Software Model Verification 
+
+Stress Testing - Load testing - Use automated scripts to verify system capacity. May be run internally or through a vendor
+Verifies the system can handle the maximum expected load
+determines the maximum capacity of the system
+
+User Acceptance Testing (UAT) Ensures software will work for users
+UAT is commonly referred to as "Beta Testing"
+Regression Testing - Checks for unexpected side effects
+
+Code security testing checks software for application security flaws
+Code Security Test - Use technology to inspect software.
+
+Static Tests - Use automated techniques to analyze code for errors and security flaws without actually executing it.
+Dynamic Tests - Execute code to verify that it is functioning correctly and doesn't have security flaws.
+
+Synthetic transactions supply inputs to code with known, expected outputs
+Code reviews, static testing, and dynamic testing are complementary, rather than competitors
+
+Fuzzing is a software testing technique that feeds software many different input values in an attempt to cause an unpredictable state or unauthorized access
+
+Security +, CySA+ and CASP+ you are named a CompTIA Security Analytics Expert
+90 minutes to answer 90 questions
+Entry-level cybersecurity positions provide exposure to many aspects of IT
+
+
+
+
+
+My point of view it's this one. When there is a major outage what they are asking you to do? Find solution as quick as possible.
+ What put stress in that sentence? It's the "as quick as possible" part. So...just ignore it and focus on "find a solution". 
+ To the many people always asking: how's going?/did you solve it?, Answer is always: working on it. 
+ To question: how much more time? Answer is: as soon as possible. Basically answers are only to give something to people but not to tie you up. 
+ In this way, major outage become as any other issue that don't make work something, that in my case happen often..so it's ordinary.
+
+Fuzzing is a software testing technique that feeds software many different input values in an attempt to cause an unpredictable state or unauthorized access
+Fuzz Testing Input Sources 
+Developer-supplied input
+Developer-supplied script
+Generation Fuzzing
+Mutation fuzzing - What type of fuzz testing captures real software input and modifies it?
+
+ZAP - OWASP Zed Attack Proxy - Rapidly test
+Avoid looking like a Hacker - Only fuzz test with permission
+
+Code repositories provide secure storage and version control
+
+Code Repositories
+- Store software source code files
+- Coordinate changes among multiple developers
+- Perform version control
+- Promote code reuse
+- Code repositories help to avoid dead code
+
+Public code repositories create potential disclosure issues
+Secure provisioning and deprovisioning of applications ensures the integrity of released code.
+Integrity Measurement - Verifies release code in unchanged
+
+Application Control - Restricts software that may run
+Whitelisting - Administrators create a list of all the applications that may run on a system.
+Blacklisting - Administrators create a list of the applications that are probhibited on a system.
+
+Group Policy Management - Applocker
+
+Applications also require patching
+
+Integrate application control logs with your SIEM
+
+Host Software Baselining - Identifies expected system software.
+
+Developers often rely upon third-party code, which introduces new security concerns.
+
+Software Development Kits - SDKS - Provide programming resources
+API - Application Programming Interface - Allow interaction with remote services
+
+Outsourcing code development also introduces third-party code concerns
+Shared code creates shared security vulnerabilities.
+
+The Open Web Application Security Project (OWASP) maintains a list of common web security issues.
+Broken Access Control - Allows unauthorized access
+Cryptographic Failure - Allows access to sensitive data
+Injection Flaw - Inserts unwanted code - Example - SQL Injection
+Insecure Design - Fails to meet security requirements
+Security Misconfiguration - Occurs in many possible locations
+Vulnerable Components - Can jeopardize application security
+Authentication Failure - Exploits session management
+Integrity Failure - Allows insertion of insecure code
+Monitoring and Log Failure - Can deprive analysts of needed data
+SSRF attack - Request Forgery Tricks servers into requesting URLs
+
+
+Thw world runs on software that must be secure and reliable
+1. Purchased Software - Acquired from software vendors for use in many different organizations.
+2. Developed Software - Custom written to meet the specialized needs of a single organization
+
+Application Hardening
+		Use proper authentication
+		Encrypt sensitive data
+		Validate user input
+		Avoid and remediate know exploits
+		Deploy obfuscation and camouflage
+		
+Prompt Patching is Critical - Attackers quickly exploit new vulnerabilities
+Application Configuration - ERP Data
+	Type and scope of encryption
+	Users with access to the application
+	Access granted to authorized users
+	Security of underlying infrastructure
+	Configuration baselines allow quick identification and remediation of security gaps
+	
+	Prevent SQL injection - Dynamic web applications depend upon back-end databases
+	Learn how SQL injection works
+	
+	Input Validation - Protects against unsafe user input by checking it on the server before executing commands
+	Parameterized SQL - Precompiles SQL code on the database server to prevent user input from altering query structure
+	
+	Cross-Site Scripting (XSS)  - Cross-site scripting attacks occur when an attacker embeds malicious scrips in a third-party website that are later run by innocent
+	visitors  to that site. XSS attackers embed scripts in sites without permission.
+	Use Input Validation - Don't allow <script> tags in user-supplied input
+	
+	Request Forgery - Cross-site request forgery attacks pose a risk to web applications
+	Cross-site request forgery, CSRF, XSRF, and "sea surf" all refer to the same attack
+
+Cross-Site Request Forgery - Cross-site request forgery (CSRF or XSRF) attacks leverage the fact that users are often logged into multiple sites at the same time and
+use one site to trick the browser into sending malicious requests to another site without the user's knowledge.
+
+XSRF Secretly Sends Request - Often using image tags
+
+Defending Against CSRF- Rearchitect web applications
+Prevent the use of HTTP GET requests
+Advise users to log out of sites
+Automatically log out users after an idle period.
+
+CSRF os a client-side attack
+Server-Side Request Forgery (SSRF) = Request forgery attack that targets servers, rather than users, by manipulating servers into
+retrieving malicious data from what it believes to be a trusted source.
+
+Directory traversal attacks allows an attacker to manipulate the web server's file structure.
+Unix Filesystems
+. references the current directory
+.. references the directory on level higher in the hierarchy
+E
+Webgoat
+Zap is a Web Proxy that intercepts web requests and allows us to modify them.
+
+Developers set aside areas of memory called buffers to store user-supplied content.
+
+Buffer Overflow Attacks - Use input larger than the buffer - unexpected behavior -
+Integer overflow
+
+What are Cookies
+Cookies are data stored by websites in user browsers
+They are particularly useful to recognize users
+
+Privacy Risks:
+Cookies can be used across different websites
+Cookies can track user activity
+
+
+Adobe Flash Cookies are know as locally shared objects or LSOs
+
+Cookies provide an easy shortcut for web authentication
+Guessable Cookies Jeopardize security
+
+Header Manupilation - 
+
+1. Cookie Guessing - Possible if cookie values are not randomly generated
+2. Session Replay - Possible if cookie values are not encrypted in transit
+
+Secure Cookies - Sent using encryption
+
+Code execution Attack - Occur when an attacker exploits a vulnerability in a system that allows the attacker to run commands on that system.
+Arbitrary code execution - Code execution attacks where the attacker run commands of his or her choice
+Remote code execution - Code execution attacks that take place over a network connection
+
+install malicious code
+Join a system to a botnet
+Steal sensitive information
+Create accounts for later access
+
+Limit administrative access
+Patch systems and applications
+
+Privilege Escalation Attack - Gains administrative access
+Privilege escalation attacks often exploit buffer overflow vulnerabilities.
+
+Mitigating Privilege Escalation 
+- Perform input validation
+- Patch operating systems, platforms and applications
+- Enforce the principle of least privilege
+- User DEP and ASLR technologies
+
+DEP (Data Execution Prevention) and ASLR (Address Space Layout Randomization) are security technologies that are used to help protect against exploits 
+that take advantage of buffer overflow vulnerabilities.
+DEP marks certain areas of memory as non-executable, so that if a buffer overflow occurs and an attacker tries to inject malicious code into that memory,
+ the code will not be executed.
+
+ASLR randomly arranges the location of key data areas in a program, such as the base of the stack, the heap, and memory locations for libraries
+and dynamic linker, making it more difficult for an attacker to predict where specific data will be located and thus more difficult for the attacker 
+to exploit a vulnerability.
+
+Driver Manipulation - Device drivers serve as the software interfaces between hardware devices and the operating system.
+Device drivers require low-level access to the operating system.
+Refactoring - Modifying a driver to carry out malicious activities. Requires access to the driver source code.
+Shimming - Wraps a legitimate drive with a malicious shim. Does not require access to the legitmate driver's source code.
+Refactoring and shimming are both techniques used in driver manipulation, but they are used for different purposes and have different characteristics.
+Refactoring is the process of restructuring existing code without changing its external behavior, in order to improve the code's maintainability, 
+readability, and performance. Refactoring of drivers is often done to improve the efficiency and reliability of the driver, and to make it easier 
+to update and maintain.
+Shimming is a technique used to intercept and redirect calls made to a specific API or DLL (Dynamic Link Library) in order to modify or extend
+the functionality of an existing application or system component without modifying the original code. This is often used in driver manipulation 
+to bypass security controls or to add additional features to a driver.
+In summary, refactoring is a process that improves the internal structure of a driver while shimming is a technique to change the functionality of a driver,
+often to bypass security controls.
+
+Code signing protects against malicious drivers
+
+Ensure that device drivers are authentic and safe
+
+Memory Vulnerabilities - Memory management provides secure isolated memory for each system process
+Memory Overflow - Allows arbitrary code execution
+Resource exhaustion may slow down or disable a system.
+Memory Leak - Fails to release memory for reuse
+
+Memory Pointers - following a pointer is known as pointer dereferencing. Null value - null pointer exception. causes the program to crash  
+with access to debugging information.
+
+Following a pointer is known as pointer dereferencing. It involves accessing the memory location that the pointer is pointing 
+to in order to retrieve or manipulate the data stored at that location. Pointer dereferencing is an important concept in C and C++ programming, 
+and is used extensively in many types of programs, including operating systems and device drivers.
+
+If you are point to nothing in memory, application crash, debug informatio is displayed, DoS
+
+A null value is a special value that is used to indicate that a pointer is not currently pointing to a valid memory location. 
+In C and C++, a null pointer is represented by the value 0 or the constant NULL. Dereferencing a null pointer can lead to an error or a crash, 
+known as a null pointer dereference. It is important for developers to check for null pointers before dereferencing them to avoid such issues.
+
+
+DLL injection - Tricks an application into loading malicious code
+DLL injection is a technique used to run malicious code within the memory space of another process. It involves injecting a dynamic link library (DLL) file into a running process, which tricks the application into loading and executing the code within the DLL.
+
+The process is typically accomplished by a hacker finding a vulnerability in the target application and then using that vulnerability to inject the DLL into the process. Once the DLL is loaded, the attacker can use it to gain unauthorized access to the target system, steal sensitive information, or perform other malicious actions.
+
+It is also used in some legitimate ways, for example, some software testing tools use DLL injection to monitor and manipulate the behavior of other processes.
+
+DLL injection is a serious security threat, as it can be used to bypass security controls and gain unauthorized access to a system. It is important for system administrators and developers to be aware of this technique and take steps to prevent DLL injection attacks, including regular security updates and patches, and using security software that is specifically designed to detect and block DLL injection attacks.
+
+
+
+Memory manangement requires cooperation between software develpers, system engineers, and security professionals.
+
+Sure, here's an example of how DLL injection could be used to attack a system:
+
+    A hacker finds a vulnerability in an application that is running on a target system, such as a web browser.
+
+    The hacker creates a malicious DLL file that contains code to steal sensitive information, such as login credentials or financial data.
+
+    The hacker uses tools or techniques to inject the malicious DLL into the memory space of the running web browser process.
+
+    Once the DLL is loaded, it starts executing its malicious code, which can steal sensitive information from the user or perform other malicious actions.
+
+    The hacker can then use the stolen information to gain unauthorized access to the target system or steal sensitive data.
+
+It is important to note that DLL injection can be used to attack any process running on a system, not only web browsers, and it can be used for various purposes, not only stealing information but also for remote code execution, privilege escalation and other malicious actions.
+
+It is also important to mention that DLL injection is not always used by hackers, some software tools use DLL injection to add features to a process or to debug it.
+
+Race condition vulnerabilities - Occurs when the proper functioning of a security control depends upon the timing of actions performed by the user or computer
+Uncontrolled race conditions can be significant security vulnerabilities
+Time of Check / Time of Use - Time elapsing between authoriztion and the action
+Locks prevent simultaneous transactions from causing race conditions
+what is Race condition vulnerabilities 
+
+A race condition is a type of vulnerability that occurs when two or more processes access shared resources simultaneously and the outcome 
+of the program depends on the order in which the resources are accessed. 
+These types of vulnerabilities can occur in multi-threaded and multi-process systems, and can lead to unexpected or incorrect results.
+
+For example, let's say there are two threads running in a program, thread A and thread B. Thread A is trying to read a value from a shared variable, 
+and thread B is trying to write a new value to that same variable. 
+If thread A reads the value of the variable before thread B has had a chance to write the new value, 
+the program may continue to use the old value instead of the new one. This can lead to unexpected or incorrect behavior.
+
+An example of a race condition vulnerability is a time-of-check-to-time-of-use (TOCTOU) vulnerability.
+ This type of vulnerability occurs when a program checks the state of a resource, such as a file or a network connection, 
+ and then uses that resource later on. If another process modifies the resource between the time it was checked and the time it was used,
+ the program may behave in an unexpected way.
+
+Race condition vulnerabilities can be difficult to detect and fix, and often require careful testing and analysis to identify and address. Developers should be aware of the potential for race conditions in their code and take steps to mitigate them, such as using synchronization mechanisms like semaphores, critical sections or locks.
+David Sonshine
+can you give an example in the financial technology industry
+
+Sure, here's an example of how a race condition vulnerability could occur in the financial technology (fintech) industry:
+
+    A fintech company has a web-based application that allows users to transfer money between bank accounts.
+
+    The application has a race condition vulnerability in the code that handles the transfer of funds.
+
+    Two users, Alice and Bob, both initiate a transfer of funds from their respective bank accounts to a third party at the same time.
+
+    Due to the race condition vulnerability, the application does not properly handle the simultaneous requests and processes them out of order.
+
+    As a result, Alice's transfer goes through and Bob's transfer is blocked, even though Bob's transfer was initiated first. Bob's account is incorrectly debited, while the third party's account is not credited.
+
+    This can lead to financial loss for Bob and incorrect account balances for both Bob and the third party.
+
+This example shows how a race condition vulnerability can lead to unexpected or incorrect behavior in a financial technology application and cause financial loss for users. It is important for fintech companies to carefully test their applications and systems for race condition vulnerabilities to ensure the integrity and reliability of their service.
+
+
+What type of attack seeks to write data to areas of memory reserved for other purposes?
+
+A buffer overflow attack is a type of attack that seeks to write data to areas of memory reserved for other purposes. It takes advantage of a vulnerability in a program or application that allows an attacker to overwrite memory beyond the bounds of a buffer or memory area that is being used to store data.
+
+In a buffer overflow attack, an attacker sends more data to a buffer than it is designed to handle. This can cause the data to overflow into adjacent memory locations, which can corrupt or overwrite other data, including memory areas that are reserved for other purposes.
+
+For example, an attacker may send a long string of data to a web form input field that is intended to only accept a small amount of data. If the application does not properly validate the input, the excess data can overflow into adjacent memory locations, potentially corrupting or overwriting data that is used by other parts of the application or system.
+
+Buffer overflow attacks can lead to a wide range of malicious activities, such as remote code execution, privilege escalation, and denial of service. It is important for developers to be aware of this type of vulnerability and take steps to prevent buffer overflow attacks, such as validating input, using secure coding practices, and implementing security measures such as DEP and ASLR.
+
+What type of object must a hacker typically access in order to engage in a session hijacking attack?
+
+A hacker typically must access a session object in order to engage in a session hijacking attack. A session is a communication between a user and a server, and it is identified by a unique session ID or token.
+
+In a session hijacking attack, a hacker intercepts or steals a user's session ID or token, which allows the attacker to impersonate the user and access the server as if they were the legitimate user. Once the attacker has access to the session object, they can use it to access sensitive data or perform malicious actions, such as stealing the user's personal information, making unauthorized transactions, or even taking over the user's account.
+
+There are various ways an attacker can steal a session ID or token, for example, by exploiting vulnerabilities in the web application, using packet sniffing techniques to intercept the data transmitted over the network, or by using phishing techniques to trick the user into providing the session ID.
+
+It is important for developers to understand the risks associated with session hijacking and take appropriate measures to protect against it, such as encrypting the session ID, using secure cookies, regenerating session ID after login, and implementing security protocols like OAuth and OpenID Connect.
+
+Privilege escalation attacks typically require an initial access to a normal user account to execute. The goal of a privilege escalation attack is to gain access to resources or perform actions that are typically restricted to a higher level of privilege than the initial account that was compromised.
+
+An attacker can use various techniques to gain access to a normal user account, such as exploiting a vulnerability in a web application, using phishing techniques to trick a user into providing login credentials, or by guessing or cracking a password.
+
+Once the attacker has access to a normal user account, they can use various techniques to escalate their privileges and gain access to resources or perform actions that are typically restricted to higher-privileged accounts. These techniques include exploiting vulnerabilities in the operating system or applications, misconfigured permissions, or by leveraging the access of the initial account to steal credentials of a privileged user.
+
+It is important for system administrators and developers to be aware of the potential for privilege escalation attacks and take steps to prevent them, such as implementing least privilege access controls, keeping software and systems up to date with security patches and implementing security best practices.
+
+What attack technique wraps malicious code around a legitimate driver?
+A technique that wraps malicious code around a legitimate driver is called a "driver wrapping attack" or "driver-based malware injection".
+
+In this attack, the attacker finds a legitimate and signed driver that is already loaded in the system, and then modifies it by injecting malicious code into it. The malicious code is designed to run with the same privileges as the legitimate driver, which allows it to evade detection and gain access to sensitive information or perform malicious actions.
+
+Once the malicious code is injected, the attacker can use the modified driver to gain access to sensitive information, steal credentials, or even take control of the system. Because the driver is signed and legitimate, it may evade detection by security software.
+
+It is important for system administrators and developers to be aware of this type of attack and take steps to prevent it, such as implementing security measures that can detect and block driver-based malware injection, regularly updating and patching the system, and only downloading and using drivers from trusted sources.
+
+A memory leak occurs when a software package fails to release memory that it reserved for use. 
+This can happen when a program dynamically allocates memory, but then fails to deallocate it when it is no longer needed. 
+Over time, this can lead to the program using an increasingly large amount of memory, which can cause it to slow down or even crash.
+
+NULL Pointer dereference - 
+- Programming technique that references a portion of memory
+- What happens if tat reference points to 
+
+Ok, imagine you and your friends are playing a game where you have to grab a toy before someone else grabs it. That's like a computer program trying to use something, like a file or memory, before someone else uses it. But sometimes, two or more of your friends grab the toy at the same time. That's like two programs trying to use the same thing at the same time.
+
+A TOC attack is like when one of your friends checks if the toy is there before trying to grab it and a TOU attack is like when two or more of your friends grab the toy at the same time.
+
+Both TOC and TOU can cause the game to be not fair or the toy to be broken because the programs can't use the thing they wanted to use properly.
+The most effective defense against cross-site scripting (XSS) attacks is to properly sanitize user input. This means ensuring that any data entered by a user is properly encoded and validated before it is displayed on a web page or used in any other way.
+
+One common method to prevent XSS is to use a whitelist of allowed characters and refuse any input that contains characters that are not on the whitelist. Another method is to escape special characters that have a special meaning in HTML or JavaScript, such as <, >, and &.
+
+Additionally, Content Security Policy (CSP) is a security feature that can be added to a website which can help prevent XSS attacks. CSP allows you to specify which sources of content are allowed to be loaded by the browser. This can prevent an attacker from injecting malicious scripts into a website.
+
+It's important to note that no single solution can provide 100% protection against XSS, so it's important to use multiple layers of defense and to keep them up-to-date.
+
+
+4. secure Coding Practices
+User-supplied input creates security exposures
+
+Input Validation - Filters user-supplied input
+Whitelisting - Specifies allowable input
+Blacklisting - Specifies disallowed input
+Blacklisting is more difficult and less effective than whitelisting.
+*** Exam tips Input validation should always be performed on the server ***
+
+Parameterized queries - In a parameterized query, the SQL template is precompiled on the database server.
+A parameterized query is a type of database query in which placeholders are used for parameter values, rather than including the values directly in the query. This can help to prevent SQL injection attacks by ensuring that user input is properly sanitized before it is included in a query. Additionally, using parameterized queries can improve performance by allowing the database to cache and reuse query plans.
+A parameterized query is like a recipe for a cook. In the recipe, instead of writing the exact amount of ingredients you will use, you write a placeholder (like "? cups of sugar").
+When you want to make the recipe, you put the right amount of ingredients in the placeholders (like "1 cup of sugar").
+This is similar to how a parameterized query works, it lets you use placeholders for the values you want to search for in a database, and then you fill in the placeholders with the real values you want to search for.
+This is safer and faster than writing the values directly into the recipe, because it prevents someone from adding something dangerous or it will make the database faster because it doesn't have to think about what values to search for each time.
+
+Stored Procedures - Use parameterized queries - Stored procedure is pre-compiled - protect against SQL attacks.
+Never store passwords in plaintext form
+Hashing - Uses a cryptographic function to transform the password into a unique value that can't be reversed.
+Salting - Adds a random value to passwords prior to hashing to protect against rainbow table attacks.
+Encrypt passwords in transit.
+
+Transport Layer Security - Encrypts web traffic uses HTTPS
+
+Output Encoding - Replaces dangerous characters
+HTML Encoding - Uses "&" notation to replace dangerous vales that appear in an HTML based web document
+URL Encoding - Uses "%" notation to replace dangerous values that appear in a URL
+
+Use trusted libraries to perform output encoding
+
+Error and exception handling - 
+
+Unpredictable states jeopardize application security.
+Error Handling - Avoids unpredictable states
+Digital signatures provide nonrepudiation
+Code Signing - Applies digital signatures to software
+
+Signing Code
+1. The developer obtains a digital certificate.
+2. The developer creates a digital signature for the code using the private key associated with the certificate.
+
+Verifying Code Signatures
+1. The user downloads the software.
+2. The operating system uses the certificate's public key to validate the signature.
+3. The OS verifies that the signatures hash matches the code.
+4. The OS verifies that the developer is trusted.
+
+Database Normal Forms - Design rules for columns and tables
+Why Normalize -
+- Prevent data inconsistency
+- Prevent update anomalies
+- Reduce the need for restructuring existing databases
+
+First Normal Form 1NF
+1. Create separate tables for different sets of related data.
+2. Provide a primary key for every table
+3. Records may not have multivalued fields.
+4. Records in a table must have the same number of fields.
+
+Second Normal Form (2NF)
+1. The table must be in 1NF2.
+2. Every non-key field must be a fact about the entire key
+
+Third Normal FOrm (3NF)
+1. The table must be in 2NF2.
+2. No non-key field may be a fact about another non-key field
+
+Use encryption to protect sensitive data stored in a database
+Obfusication and camouflage hide the locations of sensitive information.
+
+
+David Sonshine
+What is First Normal Form 1NF
+
+First Normal Form (1NF) is a database design rule that states that each column in a table should contain atomic (indivisible) values, and that there should not be any repeating groups of columns. In other words, each table should have a primary key and each column should only contain a single value, not a list of values or multiple values separated by a delimiter. This is the first step in the process of normalizing a database, which is the process of organizing data in a way that minimizes data redundancy and increases data integrity.
+David Sonshine
+what is Second Normal Form (2NF)
+
+Second Normal Form (2NF) is a database design rule that states that a table should be in 1NF and that all non-key columns should be functionally dependent on the primary key. In other words, each non-key column should depend on the entire primary key, not just a part of it. This means that if a table has a composite primary key (made up of multiple columns), each non-key column should depend on all the columns in the composite key, not just one of them. The goal of 2NF is to eliminate partial dependency and to minimize data redundancy by removing duplicate data from the table. This is the second step in the process of normalizing a database.
+David Sonshine
+explain like i am five
+
+Okay, so imagine you have a big box full of index cards. Each index card has a person's name, age, and address written on it.
+
+First Normal Form (1NF) says that each index card should only have one piece of information written on it. So, you would take all the index cards with people's names and put them in one box, all the index cards with people's ages and put them in another box, and all the index cards with people's addresses and put them in a third box.
+
+Second Normal Form (2NF) says that each box should only have one kind of information. So, if you have a box with people's names and addresses, you would split it into two boxes: one with just names, and one with just addresses.
+
+The goal of 1NF and 2NF is to make sure all the information is organized and easy to find, so you don't have to go through a lot of index cards to find what you're looking for.
+
+Database Activity Monitoring - Logs and analyzes database requests.
+
+Stored Procedures - Protect against SQL injection
+
+Deidentification - Removes obvious identifiers
+
+Identifying Individuals  ZIP + Birthday + GENDER = 87% Unique
+
+Anonymization - Remove the possibility of identification
+
+HIPAA Deidentification Standard - 
+Expert Determination - Apply statistical or scientific principles - Very Small risk that anticipated recipient could identify individual
+Safe Harbor - Removal of 18 types of identifiers - no actual knowledge residual information can identify individual
+
+Data Obfuscation - Transforms personally identifying information into a form where it is no longer possible to tie it to an individual person.
+Hashing - Replaces sensitive fields with hash values
+Rainbow Table Attack - Compares has values with precomputed hashes
+Salting - Uses random values to defeat rainbow tables.
+Tokenization - Replaces sensitive fields with a random identifier
+
+Masking - Redacts sensitive information from a file.
+
+What protocol may be used to secure passwords in transit to a web application?
+
+One protocol that is commonly used to secure passwords in transit to a web application is HTTPS (HTTP Secure).
+HTTPS is a secure version of the HTTP (Hypertext Transfer Protocol) that is used to transmit data over the internet. It encrypts the data that is sent between a web server and a web browser using Transport Layer Security (TLS) or Secure Sockets Layer (SSL) protocols.
+
+When a user submits a password to a web application, it is sent over the internet in an encrypted format, making it much more difficult for an attacker to intercept and steal the password. This is particularly important when the password is being sent over a public network such as a Wi-Fi hotspot or a cellular network, as it ensures that the password is protected from eavesdropping and man-in-the-middle attacks.
+
+HTTPS is the recommended protocol to secure passwords in transit to a web application, it is also important to make sure that the web application itself is properly configured to store and handle passwords in a secure manner.
+
+The "try-catch" clause is critical for error handling in Java.
+
+A try-catch block is used to catch and handle exceptions that may occur during the execution of a program. The "try" block contains the code that may throw an exception and the "catch" block contains the code that will handle the exception.
+
+When an exception occurs in the try block, the program execution jumps to the catch block, where it can be handled. This way, you can handle exceptions in a controlled manner and prevent your program from crashing unexpectedly.
+
+Developers wishing to sign their code must have a code signing certificate.
+
+A code signing certificate is an electronic document that binds the identity of the developer to their code. It is used to prove that the code comes from the developer who signed it, and that it has not been tampered with since it was signed.
+
+When a developer signs their code, they use their code signing certificate to create a digital signature. The signature is then embedded into the code, along with the developer's public key. When the code is run on a user's computer, the signature is verified to ensure that it has not been tampered with and that it came from the developer who signed it.
+
+Code signing certificates are typically issued by certificate authorities (CA) that have been vetted and approved by the operating system vendor or browser vendor. Some popular certificate authorities include DigiCert, GlobalSign, and Comodo.
+
+It's important to note that code signing certificates have an expiration date and must be renewed when they expire. It is also important to use a trusted certificate, otherwise the code signing will be useless as it can be easily compromised by a malicious actor.
+
+Database normalization can help improve database security by reducing data redundancy, which can lead to a reduction in data inconsistencies and data anomalies. However, normalization alone is not a complete solution for securing a database.
+
+Normalization can help to improve data integrity by ensuring that data is stored in a consistent and logical manner, which can make it more difficult for unauthorized users to access or modify data. It can also help to minimize data redundancy, which can reduce the risk of data inconsistencies and data anomalies that can be exploited by malicious actors.
+
+However, it is important to note that normalization is just one aspect of database security. Other security measures such as access controls, encryption, and incident response plans should also be implemented to ensure that the database is secure. Additionally, regular security audits and vulnerability assessments should be performed to identify and address any potential security weaknesses.
+
+In summary, normalization can be used to improve database security by reducing data redundancy and improving data integrity, but it should be used in conjunction with other security measures to provide a comprehensive security solution for the database.
+
+
+What input validation approach works to exclude prohibited input?
+
+Blacklist input validation is an approach that works to exclude prohibited input by explicitly defining a list of prohibited input values, or characters, and rejecting any input that matches an item on the list. This approach is also known as "negative" or "forbidden" validation.
+
+For example, if a web application only allows alphanumeric characters in a particular field, a blacklist input validation would reject any input that contains special characters, such as "!", "@", "#", etc.
+
+This approach can be useful in situations where the range of prohibited input is well-defined and known in advance. However, it can be difficult to maintain an exhaustive list of all prohibited input, and new types of prohibited input may emerge over time.
+
+It's important to note that blacklist input validation alone may not be enough to protect against all types of attacks, and it should be used in conjunction with other security measures such as whitelist input validation, and output encoding.
+
+Blacklist validation is also known as negative or forbidden validation, it's less secure than whitelist validation, which only allows a predefined set of inputs and it's the recommended approach to validate inputs.
+
+
+A stored procedure is an example of a parameterized query.
+
+A stored procedure is a pre-compiled collection of SQL statements that can be executed with input parameters. The input parameters are used to tailor the execution of the stored procedure to specific needs. The parameterized query is used to prevent SQL injection attacks by making sure that user-supplied input is properly sanitized before it is used in a query.
+
+Output encoding, Masked identifier, and Hashed identifier are not examples of parameterized query,
+Output encoding is a technique used to protect against cross-site scripting (XSS) attacks by converting special characters in user-supplied input into their corresponding HTML or JavaScript entities.
+Masked identifier is a technique used to hide the true identity of a user or resource by replacing it with a masked version.
+Hashed identifier is a technique used to create a unique, fixed-length string of characters that represents the original data, this is commonly used for storing passwords and sensitive data.
+
+In summary, a stored procedure is an example of a parameterized query, it's a pre-compiled collection of SQL statements that can be executed with input parameters, and it's used to prevent SQL injection attacks by making sure that user-supplied input is properly sanitized before it is used in a query.
+
+
+
+Cryptography Design and Implementation
+Understanding Encryption
+
+Cryptography - The use of mathematical algorithms to transform information into encrypted form that is not readable by unauthorized individuals.
+Encryption - Converts information from plaintext form into ciphertext
+Decryption - Converts ciphertext messages back into their plaintext form.
+
+Algorithms - Serve as mathematical recipes
+We categorize encryption algorithms as symmetric or asymmetric
+
+what is the difference between symmetric encryption and asymmetric encryption
+
+Symmetric encryption and asymmetric encryption are two different types of encryption methods that are used to secure data.
+
+Symmetric encryption, also known as private key encryption, uses a single secret key to both encrypt and decrypt data. The same key is used to encrypt and decrypt the data, and the key must be kept secret to maintain the security of the data. Examples of symmetric encryption algorithms include AES and Blowfish.
+
+Asymmetric encryption, also known as public key encryption, uses a pair of keys, one for encryption and one for decryption. The encryption key, also known as the public key, is used to encrypt the data and can be shared with anyone. The decryption key, also known as the private key, is used to decrypt the data and must be kept secret. Examples of asymmetric encryption algorithms include RSA and Elliptic Curve Cryptography (ECC).
+
+One of the main differences between symmetric and asymmetric encryption is that symmetric encryption is generally faster, but it requires that the key be exchanged securely between the sender and receiver, while asymmetric encryption is slower but it does not require the key to be exchanged securely as the public key can be shared with others.
+
+Another difference is that symmetric encryption is used for confidentiality, while asymmetric encryption is used for confidentiality, integrity, and authentication.
+
+We can compute the number of symmetric keys required for a group to communicate  n(n-1) / 2
+
+Asymmetric algorithms use keypairs.  keys used to encrypt and decrypt using asymmetric cryptography must be from the same pair.
+Asymmetric cryptography is slower than symmetric cryptography
+
+
+There are five goals we can achieve by using cryptography
+1. Confidentiality
+2. Integrity - No unauthorized changes.
+3. Authentication - Proof of identity claims
+4. Obfuscation - Hiding sensitive data
+5. Non-Repudiation - Verification of original. Digital signatures provide non-repudiation. Non-Repudiation is only possible with asymmetric cryptography.
+
+
+
+
+
+
+
+Data at Rest = stored on a hard drive or other storage.
+Data in Transit - Transmitted over a network connection
+Data in Use - Process actively in memory
+
+
+
+Codes and Ciphers
+Code - A system that substitutes one word or phrase for another.
+10 Code
+
+David Sonshine
+give me a list of the 10 code used in law enforcement
+
+    10-4: "Affirmative" or "OK"
+    10-8: "In service" or "Available for duty"
+    10-10: "Negative" or "No"
+    10-20: "My location is..."
+    10-22: "Disregard"
+    10-23: "Stand by"
+    10-24: "Completed last assignment"
+    10-25: "Meet me at..."
+    10-26: "Estimated time of arrival"
+    10-27: "Driver's license information"
+	
+Cipher - 	
+Stream Ciphers - Operate on one character, or bit of a message at a time.
+Block Ciphers - Operate on large segments of the message at the same time
+
+A block cipher is a method of encrypting data in which a fixed-size block of plaintext is transformed into a block of ciphertext of the same size using a symmetric key. The most common block size is 64 bits, but other sizes, such as 128 bits, are also used. The plaintext is divided into blocks, and each block is encrypted independently of the others using the same key. Examples of block ciphers include AES, DES, and Blowfish.
+On the other hand, a stream cipher is a method of encrypting data in which a stream of plaintext is transformed into a stream of ciphertext one bit or byte at a time using a symmetric key. The key is used to generate a stream of keystream bits, which are then combined with the plaintext using a bit-wise exclusive-or operation. Since the encryption is done one bit or byte at a time, stream ciphers can encrypt data of any length. Examples of stream ciphers include RC4 and Salsa20.
+One of the main difference between block cipher and stream cipher is that block cipher encrypts data in fixed-size blocks, while stream cipher encrypts data one bit or byte at a time. Additionally, block ciphers are more secure than stream ciphers when encryption the same key for multiple times.
+
+Substitution ciphers that shift each letter by an increment are called rotation ciphers. Uses the notation ROT and number of characters rotated. Shift character 13 places is called ROT 13
+Transposition Ciphers - Rearrange the characters in a message
+Substitution and transposition are the building blocks of modern cryptography.
+
+Math plays a central role in cryptography
+
+Exclusive OR (XOR) 
+Exclusive OR (XOR) is a logical operation that compares two binary values and returns a binary value of 1 if the two input values are different and 0 if they are the same. It is represented by the symbol "^" in most programming languages.
+
+In cryptography, XOR is often used in combination with other operations to create encryption and decryption algorithms. For example, in stream ciphers, a plaintext message is combined with a keystream generated by a pseudorandom number generator using the XOR operation. The resulting ciphertext can then be decrypted by performing the XOR operation again with the same keystream.
+
+One of the main advantage of using XOR operation in cryptography is that it is a reversible operation, that is, the original plaintext can be recovered by applying the XOR operation again with the same keystream. Additionally, the XOR operation has the "diffusion" property which means that a small change in the plaintext will result in a large change in the ciphertext, this property helps in the security of the encryption.
+
+Sure! A truth table is a way to show all the possible inputs and outputs for a logical operation like XOR. Here's the truth table for XOR:
+A	B	A XOR B
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+
+In the table, "A" and "B" are the input values, and "A XOR B" is the output value. The values of A and B can be either 0 or 1, and the XOR operation returns 1 if one of the inputs is 1 and the other is 0, otherwise it returns 0.
+
+For example, if A is 1 and B is 0, the XOR operation will return 1 because one of the inputs is 1 and the other is 0. But if A is 0 and B is 0, the XOR operation will return 0 because both inputs are the same.
+
+Cryptography relies upon pseudorandom number generation because we lack a source of truly random numbers.
+
+Confusion - Every bit of the ciphertext must depend upon more than one bit of the encryption key
+Diffusion - Changing a single bit of the plaintext should change about 50% of the ciphertext bits.
+Obfuscation - Uses cryptography to hide source code from users.
+
+Selecting an encryption algorithm requires careful thought
+Don't try to build your own encryption algorithm unless you really know what you're doing
+
+Security through Obscurity - Security of an algorithm depends upon the secrecy of its approach
+Use encryption algorithms proven to be secure.
+Choosing Your Key Length - The longer the key, the more secure your information will be.
+The longer the key, the performance goes down.
+
+Use tested encryption modules and cryptographic service providers.
+one-Time Pad - It is an unbreakable encryption algorithm
+One-Time pads are unbreakable because they are totally random.
+
+The Cryptographic lifecycle manages the use of encryption materials over time.
+As cryptographic algorithms age, they often become insecure
+Five phases of Encryption (NIST)
+1. Initiation - Gather requirements for the new cryptographic system
+2. Development and Acquisition - Find an appropriate combination of hardware, software, and algorithms that meet objectives
+3. Implementation and Assessment - Configure and test the cryptographic system.
+4. Operations and Maintenance - Ensure the continued secure operation of the cryptographic system
+5. Sunset  - Phase out the system and destroy / archive keying materials
+
+What is the simplest way to take an existing cipher and make it stronger? increase the length of the encryption key
+Alice would like to be able to prove to Charlie that a message she received actually came from Bob. What cryptographic goal is Alice trying to enforce? non-repudiation
+Bob is planning to use a cryptographic cipher that rearranges the characters in a message. What type of cipher is Bob planning to use? transposition cipher
+What operation uses a cryptographic key to convert plaintext into ciphertext? encryption 
+If Alice wants to send a message to Bob using symmetric cryptography, what key does she use to encrypt the message? shared secret key
+
+Symmetric Cryptography - Data Encryption Standard (DES) 
+-Designed by IBM in the 1970s
+-Intended to serve as federal encryption standard.
+-Replaced untested algorithms used by agencies
+- Enhanced interoperability of communications
+DES uses an encryption operation called the Feistel function for 16 rounds of encryption.
+Each F-box performs a combination of substitution and transpositiion operations.
+DES is no longer considered secure.
+
+DES is a Symmetric encryption algorithm
+Block cipher operating on 64-bit blocks
+*** Key length of 56 bits ***
+Considered insecure.
+
+Old cryptographic equipment designed to work with DES was suddenly insecure
+Triple DES - Applies encryption three times
+Triple DES applies DES three times with three keys: K1, K2, K3
+
+DES Keying Options - 
+Keying Option 1 - K1 does not equal K2 does not equal K3 in encryption with effective key strength of 112 bits.
+Keying Option 2 - K1=K3, K1does not equal K2, K2 does not equal K3 80 bits
+Keying Option 3 - K1=K2=K3
+
+The 3DES (Triple Data Encryption Standard) keying option 3, also known as "3-key" or "3TDEA", is considered to be less secure than other keying options due to the use of a weak key. In this option, three different keys are used in the encryption process, but the first and third keys are the same. Because of this, the encryption process is effectively using only two keys, making it weaker than the other options.
+Additionally, 3DES has a relatively small key size of 112-bits, which makes it vulnerable to brute force attacks. This is especially true when compared to modern encryption algorithms that use larger key sizes, such as AES (Advanced Encryption Standard) which uses 128-bits, 192-bits, or 256-bits key sizes.
+It's not recommended to use 3DES keying option 3 for new systems, as it is considered to be less secure than the other keying options. It's better to use other encryption algorithms that provide stronger security, such as AES, which is widely considered to be a more secure encryption standard.
+It's also worth noting that, as of today, 3DES is considered as a legacy encryption standard, and it's replacement, AES, is widely adopted for new systems.
+
+Double DES is no more secure than standard DES due to the meet-in-the-middle attack.
+Triple 3DES is being phased out.
+
+Key Facts about 3DES
+Symmetric encryption algorithm
+Block cipher operating on 64-Bit blocks
+When using three keys - Effective key length of 112 bits.
+Considereed weak and being phased out.
+
+AES, Blowfish, and Twofish.
+The Rijndael algorithm won a competition to become the Advanced Encryption Standard (AES)
+AES uses substitution and transposition.
+
+AES Crypt - open source package
+https://www.aescrypt.com/
+
+Key Facts about AES - Symmetric encryption algorithm
+Block cipher operating on 128-bit blocks
+Key length of 128, 192 or 256 bits
+Considered secure
+
+Blowfish - Symmetric encryption algorithm
+Public domain algorithm developed by Bruce Schneier in 1993
+Uses a Feistel networkCombines substitution and transposition
+Block cipher operating on 64 bit blocks
+Key Length anywhere between 32 and 448 bits.
+Not considered secure
+
+Twofish -
+Designed as a DES replacement
+Placed into the public domain
+Uses a Feistel network
+Combines substitution and transposition
+Symmetric encryption algorithm
+Block cipher operating on 128-bit blocks
+Key length of 128,192, or 256 bits
+Considered secure
+
+RC4 is a symmetric stream cipher
+Ron Rivest invented - leaked on internet in 1994
+Wired Equivalent Privacy (WEB)
+Wi-FI Protected Access (WPA)
+Secure Sockets Layer (SSL)
+Transport Layer Security (TLS) 
+RC4 uses a pseudorandom keystream
+RC4 is no longer considered secure
+RC4 is a Symmetric encryption algorithm
+Stream Cipher
+Variable length key between 40 bits and 2048 bits
+
+
+Cipher Mode - Describes how an algorithm encrypts and decrypts data
+Electronic Codebook (ECB) Mode 
+Encrypting the same block with the same key in ECB mode results in identical ciphertext blocks
+
+Cipher Block Chaining (CBC) Mode - CBC (Cipher Block Chaining) is a block cipher mode of operation that uses a block of ciphertext from the previous block to encrypt the current block of plaintext, resulting in a secure encryption of data. It helps prevent the same plaintext from encrypting to the same ciphertext and makes encryption more secure by reducing repetition.
+Counter Mode (CTR) CTR (Counter Mode) is a block cipher mode of operation that generates a stream of keystream blocks, which are XORed with plaintext blocks to produce the ciphertext. CTR mode generates the keystream by encrypting a set of sequential counter values, so the same plaintext block encrypts to different ciphertext for each block in the stream. CTR mode is secure and efficient for parallel encryption/decryption operations.
+A nonce (number used once) in CTR mode is a random or unique value used as an initialization vector (IV) for the counter block. The nonce is combined with a counter value to form the input for encryption, ensuring that the same plaintext block encrypts to different ciphertext for each block in the stream. The nonce must be unique for each encryption operation to avoid repeated counter values and ensure security.
+
+Galois/Counter Mode (GCM) adds authentication capability.
+
+Counter mode allows block ciphers to act more like stream ciphers.
+
+Steganography Hides data in large files
+Steganography slight modifications to image pixels may hide information
+Software - OpenStego 
+
+What length encryption key does the Data Encryption Standard use?  56 bits 
+How many keys should be used with 3DES to achieve the greatest level of security? 3
+Jasmine comes across a file sent out of her organization that she suspects contains proprietary trade secrets but appears to be an innocuous image. What technique might the sender have used to hide information in the image? steganography
+What basic cryptographic functions does the AES algorithm use to encrypt plaintext? both substitution and transposition
+What action can users take to overcome security flaws in RC4? It is not possible to use RC4 securely.
+
+Asymmetric Cryptography
+RSA
+Diffie-Hellman
+Elliptic curve
+Quantum Cryptography
+
+RSA Algorithm - Rivest, Shamir, Adelman (RSA) - 1977
+Ron Rivest - Creator RC4 - From MIT
+
+Users create RSA key pairs using two large prime numbers - Creates Public and private key
+Distribute your public key freely, but keep your private key secure.
+RSA - Sender encrypts messages using the recipient's public key
+Recipient decrypts messages using their own private key
+RSA is slow
+RSA is more commonly used to exchange symmetric keys
+RSA patent is expired
+
+RSA - Asymmetric encryption algorithm
+Variable length key between 1024 and 4096 bits
+Considered Secure
+
+PGP - Pretty Good Privacy (PGP) - Phil Zimmerman's asymmetric algorithm 
+PGP Function
+- Uses public and private keys
+- Combines both symmetric and asymmetric cryptography
+
+GnuPG - GNU systems Privacy Guard 
+PGP relies upon other encryption algorithms
+
+Elliptic curve and quantum cryptography 
+Asymmetric cryptography is based upon the difficulty of solving complex math problems
+Prime Numbers - Only divisible by themselves and 1 such as 2,3,5,7,11
+Factoring Prime Numbers 15= 3x5  , 21= 3X7
+Finding a way to solve the prime factorization problem would break modern cryptography
+
+Elliptic Curve Cryptography (ECC) - Uses the Elliptic Curve discrete log problem
+ECC doesn't use prime factorization
+
+what are some quantum mechanics principles in computing
+
+Quantum mechanics has several principles that are applied in quantum computing, some of the most important ones are:
+Superposition: The ability of a quantum bit (qubit) to exist in multiple states simultaneously, which is the basis of quantum parallelism.
+Entanglement: The phenomenon where the state of two or more qubits are correlated, allowing quantum computers to perform operations on multiple qubits simultaneously.
+Interference: The principle of wave-particle duality and the interference of probability amplitudes, which allows quantum computers to solve certain problems more efficiently than classical computers.
+Uncertainty principle: The principle that the position and momentum of a particle cannot both be known with infinite precision, which has implications for quantum key distribution and quantum cryptography.
+No cloning theorem: The principle that it is not possible to make an exact copy of an arbitrary quantum state, which has implications for data protection in quantum computing.
+
+Quantum cryptography may be stronger than any modern approach.
+
+The Tor Protocol facilitates an anonymous internet
+TOR - The Onion Router (TOR) is a software package that uses encryption and relay nodes to facilitate anonymous internet access
+TOR in Action - 
+Perfect Forward Secrecy - PFS - Hides nodes' identity from each other
+
+When you communicate over the Tor network, which of the following entities do you communicate with directly? entry node
+What key is actually used to encrypt the contents of a message when using PGP?
+In PGP (Pretty Good Privacy), the recipient's public key is used to encrypt the message, and the recipient's private key is used to decrypt the encrypted message. The public key is intended to be shared widely, while the private key must be kept secret.
+
+Which one of the following encryption approaches is most susceptible to a quantum computing attack? elliptic curve cryptography
+
+David Sonshine
+Alice would like to send a message to Bob using RSA encryption. What key should she use to encrypt the message?
+
+Alice should use Bob's public key to encrypt the message when using RSA encryption. RSA is an asymmetric encryption algorithm that uses two keys: a public key for encryption and a private key for decryption. The recipient's public key is made publicly available and used by the sender to encrypt the message. In this case, Alice would encrypt the message using Bob's public key, and only Bob, who has the corresponding private key, would be able to decrypt the message.
+
+KEY Management
+Symmetric algorithms depend upon shared secret keys
+Out-of-Band Key Exchange - Uses a different channel. Physical Mail. Out-of-Band Key exchange is difficult and time consuming
+In-Band key Exchange - 
+
+Diffie-Hellman Algorithm - Invented in 1976
+Provides symmetric key exchange capability
+Based upon work of Ralph Merkle
+Implemented by Whitfield Diffie and Martin Hellman
+
+Elliptic Curve Diffie-Helmann - ECDH - 
+
+Encryption Key Escrow - Allows government / police access to keys
+The Clipper chip included technology that would allow government access to encrypted communications. Special LEAF value for Law Enforcement
+
+Recovery Agents - Microsoft Windows Encrypting File System - Recovery agents
+Key Stretching - Tkes a relatively insecure value, such as a password, and uses mathematical techniques to strengthen it, making it harder to crack.
+Salting - Adds a value to the encryption key to make it more complex.
+Hashing - Adds time to the verification process by requiring more math.
+Verifying one key is fast, but guessing millions of keys is slow.
+
+PBKDF2 - Password-Based Key Derivation Function v2
+Uses salting and hashing to stretch a key
+Should be used at least 4000 times
+
+bcrypt - Key stretching with Blowfish
+
+Cryptography requires significant computing power
+Hardware Security Modules (HSMs) - Manage encryption keys and perform cryptographic operations.
+
+Hardware Security Modules (HSMs) are specialized devices used for secure cryptographic operations, such as encryption, decryption, digital signatures, and key generation. Some common examples of HSMs include:
+
+Thales nShield: A range of HSMs that provide a high level of security for cryptographic operations in various applications and industries.
+
+Utimaco HSMs: Utimaco provides a range of HSMs that are widely used in banking, finance, and other industries for secure key management and cryptographic operations.
+
+Gemalto SafeNet HSMs: Gemalto provides a range of HSMs that are used in cloud infrastructure, retail, and other applications to secure cryptographic keys and perform secure cryptographic operations.
+
+Yubico YubiHSM: A small form factor HSM designed for use in a variety of applications, including cloud infrastructure, IoT devices, and secure authentication.
+
+Nitrokey HSM: An open-source HSM designed for secure key management and cryptographic operations in cloud infrastructure and other applications.
+
+
+
+
+https://aws.amazon.com/cloudhsm/
+
+FIPS 140-2 (Federal Information Processing Standard Publication 140-2) is a U.S. government standard that specifies the security requirements for cryptographic modules used to protect sensitive data. The standard defines four increasing levels of security, with Level 1 being the least secure and Level 4 being the most secure.
+
+Cryptographic modules that are certified as FIPS 140-2 compliant must undergo rigorous testing to ensure they meet the security requirements specified in the standard, including requirements for secure key storage, secure key generation, and secure cryptographic operations.
+
+FIPS 140-2 certification is widely recognized as an industry standard for secure cryptography, and many organizations and government agencies require the use of FIPS 140-2 compliant cryptographic modules to protect sensitive data.
+
+
+Here is a table summarizing the four security levels specified in FIPS 140-2:
+
+Security Level	Description
+Level 1	Basic security requirements, including physical security mechanisms to prevent unauthorized access to the cryptographic module.
+Level 2	Adds requirements for cryptographic key management and secure key storage to the requirements of Level 1.
+Level 3	Adds requirements for physical tampering protection and role-based authentication to the requirements of Level 2.
+Level 4	Adds additional requirements for physical security, including tamper-evident coatings, to the requirements of Level 3. This is the highest security level defined in FIPS 140-2.
+Note that these are general descriptions, and the full details of each security level can be found in the FIPS 140-2 standard.
+
+
+Which one of the following is an example of an in-band approach to key exchange?  Diffie-Hellman
+In the early 1990s, the National Security Agency attempted to introduce key escrow using what failed technology? Clipper chip
+
+bcrypt is a password hashing function that is specifically designed to be slow and computationally expensive, making it more difficult 
+for attackers to crack hashed passwords. bcrypt was designed to be resistant to attacks that use parallel processing or specialized hardware
+ to guess passwords at a very high rate.
+In bcrypt, a password is combined with a salt and a number of rounds of the Blowfish cipher are used to generate a hash. 
+The number of rounds can be configured to increase or decrease the computational cost of generating the hash, allowing the system administrator 
+to adjust the level of security to match their needs.
+
+bcrypt is widely used for secure password storage, as it provides a high level of security without requiring expensive hardware. 
+Additionally, bcrypt provides a mechanism for "automated" password upgrades, as the number of rounds can be increased over time as computers become 
+faster and attacks become more sophisticated.
+ 
+ https://youtu.be/lJ8_VCpBNP8?t=44
+ 
+ Here are five of the worst Distributed Denial of Service (DDoS) attacks in history:
+
+2016 Dyn DDoS Attack: This attack caused widespread internet disruption and took down popular websites such as Twitter, Spotify, and Reddit.
+
+2018 GitHub DDoS Attack: This attack peaked at 1.35 terabits per second, making it one of the largest DDoS attacks on record at the time.
+
+2020 Zoom DDoS Attack: During the pandemic, the increased usage of video conferencing tool Zoom made it a target for DDoS attackers, with multiple attacks being reported.
+
+2021 Amazon Web Services (AWS) DDoS Attack: This attack affected multiple Amazon Web Services customers, including some of the largest websites in the world.
+
+2014 Spamhaus DDoS Attack: This attack reached a peak of 300 Gbps, making it one of the largest DDoS attacks at the time.
+
+what is cross site scripting 
+
+Cross-Site Scripting (XSS) is a type of vulnerability in web applications that allows attackers to inject malicious code into a website that is then executed by unsuspecting users. The code can be in the form of JavaScript, HTML, or other types of scripting language, and can be used to steal sensitive information, hijack sessions, or display malicious content to users. XSS attacks can occur when user-supplied data is not properly validated and sanitized before being displayed on a web page. This can occur in a number of ways, such as through a search field, a form input, or a URL parameter. To prevent XSS attacks, web developers should always validate and sanitize all user-supplied data and encode it properly before including it in a web page.
+Session Hijacking and Replay Attacks are both security threats that target the communication between a user and a website. Here's the difference between the two:
+
+Session Hijacking: Session Hijacking occurs when an attacker takes over an active user session. This is done by intercepting the session information, such as cookies, and using it to impersonate the user and access the website. The attacker can then perform actions on behalf of the user, such as making unauthorized purchases or accessing sensitive information.
+
+Replay Attack: A Replay Attack is a type of attack where an attacker intercepts and records a valid communication between a user and a website, and then plays it back at a later time to the website. The website believes that the request is coming from the original user, allowing the attacker to gain access to sensitive information or perform unauthorized actions.
+
+Both Session Hijacking and Replay Attacks can be prevented by using encryption to secure the communication between the user and the website, and by using strong authentication methods to validate the identity of the user.
+
+ DNSSEC (Domain Name System Security Extensions) is a set of security extensions to the DNS (Domain Name System) that provide authenticity and integrity of DNS data through digital signatures. It helps to prevent tampering, eavesdropping, and other malicious activities in the DNS infrastructure, which can compromise the security and privacy of users accessing the Internet. DNSSEC enhances the reliability and trustworthiness of the DNS information, ensuring that users are directed to the correct website, and that the information they receive from the website is not tampered with or altered in transit.
+ 
+
+Public Key Infrastructure - 
+Requirements for Key Exchange Trust Models
+The two parties must be confident that they are really communicating with each other and that neither one is an impostor
+The two parties must be confident that nobody is evesdropping on the key exchange.
+
+Asymmetric Cryptography-
+Users don't need to share their private keys
+Users can (and should share their public keys freely)
+We stil need to prevent imposters
+
+Trust Models -
+Personal knowledge
+Web of trust (WOT) first introduced by PHil Zimmermen. 
+Participants digitally sign the public keys of people they know personally
+Web of Trust Issues
+Decentralized approach
+High barrier to entry 
+Requires technical knowledge.
+
+Public key infrastructure (PKI) builds upont the web of trust concept.
+PKI and digital certificates
+The public key infrastructure (PKI) depends upon highly trusted certificate authorities (CAs)
+
+Certificate Authority (CA) - Trusted third-party organizations that verify the identity of individuals or organizations and then
+issue digital certificates containing both identity information and a copy of the subject's public key.
+
+Digital certificates are the identity cards of the digital world
+After authenticating identity, the CA provides a digital certificate containing the public key.
+Anyone trying to use your digital certificate illegitmately won't have your private key.
+
+HASH FUNCTIONS - One-way functions that transform a variable lenght input info a unique, fixed-length output.
+One-way functions can't be reversed
+The output of a hash function will always be the same lenth, regardless of the input size.
+No two inputs to a hash function should produce the same output
+
+Hash Functions May fail 
+- If they are reversible
+- If it is not collision resistant
+
+Ron Rivest created MD5 in 1991
+MD5 is the fifth in a series of hash functions.
+Message digest is antoher term for hash
+MD5 produces 128-bit hashes
+MD5 is no longer considered secure in 2013
+
+NIST created the Secure Hash Algorithm (SHA) family as a government standard.
+SHA-1
+Produces a 160-bit hash value
+Contains security flaws that render it insecure
+
+SHA-2
+Consists of a family of six hash functions
+Produces output of 224, 256, 384, 512 bits
+Uses a mathematically similar approach to SHA-1 and MD5 - theoretically susceptible to same flaws
+
+SHA-3 in 2006
+Deisgned to replace SHA-2
+Keccak Algorithm uses a completely different hash generation approach than SHA-2
+Produces hashes of user-selected fixed length
+
+RIPEMD - Belgium
+Race Integrity Primitives
+Created as an alternative to government-sponsored hash function
+Produces 128, 160 (supports Bitcoin transactions), 256, 320-bit hashes
+
+HMAC - Hash-based Message Authentication Code
+Combines symmetric cryptography and hashing
+Provides authentication and integrity.
+Create and verify message authentication code by using a secret key in conjunction with a hash function
+Hash functions are used with asymmetric cryptography for digital signatures and digital certificates.
+
+Digital Signatures - 
+Digital singatures use asymmetric cryptography to achieve integrity, authentication, and non-repudiation.
+
+Signed Message Recipients Know
+1. The owner of the public key is the person who signed the message 
+2. The message was not altered after being signed. - Integrity
+3. The recipient can prove these facts to a third party - non-repudiation.
+
+
+Digital Signatures Depend on
+- Collision-resistant hash functions
+- Asymmetric cryptography
+Use your private key to create digital signatures
+
+Digitally signing messges does not provide confidentiality
+
+Digital Signature Standard DSS acceptable for use
+Approved DSS AlgorithmsDigital Signature Algorithm (DSA)
+Rivest-Shamir-Adelman (RSA)
+Elliptic Curve Digital Signature Algorithm (ECDSA)
+
+Digital certificates follow the X.509 standard
+openssl req -new -newkey rsa:2048
+
+DER - Distinguished Encoding Rules - Binary Format
+Use .DER, CRT and CER file extensions.
+
+PEM  Certificates - Name comes from outdated Privacy Enhanced Mail (PEM) standard
+ASCII text equivalents of DER certificates
+Convert with OpenSSL
+Use .PEM or .CRT extensions.
+
+.CRT files may be either DER binary Certificates or PEM text certificates
+
+PFX - Personal Information Exchange 
+Binary Format
+Commonly used by Windows Systems 
+Use PFX and P12 file extensions
+Store in the P7b Format
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
