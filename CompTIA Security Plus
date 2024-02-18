@@ -188,13 +188,6 @@ Build a strong security foundation
 Implement strong encryption
 Use rigorous monitoring
 
-
-
-
-
-
-
-
 Card skimmers read magnetic stripes which may then be used in card cloning attacks
 
 Flash drives and other removable media may contain malware that triggers when inserted into a new device
@@ -749,10 +742,6 @@ Security +, CySA+ and CASP+ you are named a CompTIA Security Analytics Expert
 90 minutes to answer 90 questions
 Entry-level cybersecurity positions provide exposure to many aspects of IT
 
-
-
-
-
 My point of view it's this one. When there is a major outage what they are asking you to do? Find solution as quick as possible.
  What put stress in that sentence? It's the "as quick as possible" part. So...just ignore it and focus on "find a solution". 
  To the many people always asking: how's going?/did you solve it?, Answer is always: working on it. 
@@ -865,7 +854,7 @@ Directory traversal attacks allows an attacker to manipulate the web server's fi
 Unix Filesystems
 . references the current directory
 .. references the directory on level higher in the hierarchy
-E
+
 Webgoat
 Zap is a Web Proxy that intercepts web requests and allows us to modify them.
 
@@ -1161,17 +1150,14 @@ Third Normal FOrm (3NF)
 Use encryption to protect sensitive data stored in a database
 Obfusication and camouflage hide the locations of sensitive information.
 
-
-David Sonshine
 What is First Normal Form 1NF
 
 First Normal Form (1NF) is a database design rule that states that each column in a table should contain atomic (indivisible) values, and that there should not be any repeating groups of columns. In other words, each table should have a primary key and each column should only contain a single value, not a list of values or multiple values separated by a delimiter. This is the first step in the process of normalizing a database, which is the process of organizing data in a way that minimizes data redundancy and increases data integrity.
-David Sonshine
-what is Second Normal Form (2NF)
+
+What is Second Normal Form (2NF)
 
 Second Normal Form (2NF) is a database design rule that states that a table should be in 1NF and that all non-key columns should be functionally dependent on the primary key. In other words, each non-key column should depend on the entire primary key, not just a part of it. This means that if a table has a composite primary key (made up of multiple columns), each non-key column should depend on all the columns in the composite key, not just one of them. The goal of 2NF is to eliminate partial dependency and to minimize data redundancy by removing duplicate data from the table. This is the second step in the process of normalizing a database.
-David Sonshine
-explain like i am five
+
 
 Okay, so imagine you have a big box full of index cards. Each index card has a person's name, age, and address written on it.
 
@@ -1554,7 +1540,6 @@ In PGP (Pretty Good Privacy), the recipient's public key is used to encrypt the 
 
 Which one of the following encryption approaches is most susceptible to a quantum computing attack? elliptic curve cryptography
 
-David Sonshine
 Alice would like to send a message to Bob using RSA encryption. What key should she use to encrypt the message?
 
 Alice should use Bob's public key to encrypt the message when using RSA encryption. RSA is an asymmetric encryption algorithm that uses two keys: a public key for encryption and a private key for decryption. The recipient's public key is made publicly available and used by the sender to encrypt the message. In this case, Alice would encrypt the message using Bob's public key, and only Bob, who has the corresponding private key, would be able to decrypt the message.
@@ -1639,16 +1624,11 @@ faster and attacks become more sophisticated.
  
  https://youtu.be/lJ8_VCpBNP8?t=44
  
- Here are five of the worst Distributed Denial of Service (DDoS) attacks in history:
-
+Here are five of the worst Distributed Denial of Service (DDoS) attacks in history:
 2016 Dyn DDoS Attack: This attack caused widespread internet disruption and took down popular websites such as Twitter, Spotify, and Reddit.
-
 2018 GitHub DDoS Attack: This attack peaked at 1.35 terabits per second, making it one of the largest DDoS attacks on record at the time.
-
 2020 Zoom DDoS Attack: During the pandemic, the increased usage of video conferencing tool Zoom made it a target for DDoS attackers, with multiple attacks being reported.
-
 2021 Amazon Web Services (AWS) DDoS Attack: This attack affected multiple Amazon Web Services customers, including some of the largest websites in the world.
-
 2014 Spamhaus DDoS Attack: This attack reached a peak of 300 Gbps, making it one of the largest DDoS attacks at the time.
 
 what is cross site scripting 
