@@ -411,8 +411,6 @@ a cross over cable is needed when connecting 2 MDI or 2 MDI-X to one another
 The majority of the questions focused on topics such as VLANs, LACP (Link Aggregation Control Protocol), warm and hot sites, VPN (Virtual Private Network) security features, and the various generations of 802.11 Wi-Fi standards. It was important to have a solid understanding of these areas to do well on the exam.
 One key recommendation I have is to memorize CIDR (Classless Inter-Domain Routing). This knowledge can be a lifesaver when dealing with networking tasks.
 
-I would put it in a standard three-fund portfolio,, i.e. 45% VTSAX, 30% VTIAX, 25% VBTLX.
-
 Notes:
 
 SMTP tcp/25 TLS encrypted tcp/587
@@ -531,51 +529,4 @@ Network interface cards are MDI or Media Dependent Interface devices
  "Zero-Emergencies Are Caused, Even When Noone Is Dally-dallying." 
  
  Clientless VPN allows remote clients to connect to the internal web application securely without requiring the installation of any specific client software. This means that it can work on a wide range of devices, including smartphones, tablets, and computers, regardless of the operating system or platform.
- avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 2 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 3 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 4 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 5 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 6 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 7 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 8 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 9 of 10: not in sync: resp=0x05
-avrdude: stk500_recv(): programmer is not responding
-avrdude: stk500_getsync() attempt 10 of 10: not in sync: resp=0x05
-Failed chip erase: uploading error: exit status 1
 
-I just got a Raspberry PI 5 and was interested in mining cryptocurrency.
-My setup includes three Arduino UNO boards connected to a Raspberry PI 400.
-
-
-qzzq4ujtv82q2360unr0tlpljly0ps4envh2uf6ay7
-
-Bitcoin Cash
-qzzq4ujtv82q2360unr0tlpljly0ps4envh2uf6ay7
-
-
-
-
-
-
-Bitcoin cash
-qz8uthjwaj7vrm5lz4ctmat75a2el2gsj5xu0y99ha
-
-qzu7809h8pz0sxd73qztffy4j73ksusg8cdwk8uzcl
-
-
-{"client":"73.178.62.7","ip":"162.212.157.226","name":"north-america-node-2","port":1641,"region":"NA","server":"svko","success":true}
-{"client":"73.178.62.7","ip":"162.212.157.226","name":"north-america-node-1","port":7391,"region":"NA","server":"svko","success":true}
-
-qp459vc84l2k23jp0fepkkddqluaguc42v6jtpcaln
-
-qrzgdvg7f4rtujsw5wu40p4fa2yjdxdwjcc74qmmq9
