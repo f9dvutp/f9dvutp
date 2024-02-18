@@ -1,0 +1,581 @@
+Comptia Network Plus
+
+In a Slowloris attack, the attacker aims to exhaust the server's resources, such as available connections, rather than overwhelming it with a high volume of traffic. The attack takes advantage of the way web servers handle incoming connections and resource allocation. Here's how a Slowloris attack typically works: The attacker initiates multiple connections to the targeted web server, usually using a botnet or multiple compromised systems. For each connection, the attacker sends a partial HTTP request to the server, such as the request headers. However, the request is intentionally kept incomplete, with the attacker periodically sending additional header data to keep the connection open. The attacker keeps these connections open by sending small amounts of data at regular intervals, ensuring that the server keeps waiting for the complete request. This effectively ties up the server's resources, as it allocates memory and connection slots for each open connection. As the number of open connections increases, the server's capacity to handle new legitimate connections diminishes. Eventually, legitimate users trying to access the server may experience denial of service, as there are no available resources left to process their requests. Slowloris attacks can be effective because they exploit a vulnerability in how web servers allocate resources rather than overwhelming the network or server with a high volume of traffic. However, many modern web servers have implemented measures to mitigate Slowloris attacks and protect against such threats.
+
+Ettercap is a comprehensive, open-source network security tool used for network packet sniffing, analysis, and man-in-the-middle attacks. It is designed to intercept and capture network traffic in real-time, allowing security professionals to analyze and manipulate data on a local network. Some key features of Ettercap include: Packet sniffing: Ettercap can capture network packets transmitted over the local network, enabling the analysis of protocols, data, and connections. Man-in-the-middle attacks: Ettercap can perform man-in-the-middle (MITM) attacks by intercepting and modifying network traffic between two communicating hosts. This allows it to monitor, alter, or inject packets into the communication, potentially leading to various security exploits. Protocol support: Ettercap supports a wide range of network protocols, including Ethernet, ARP, IP, TCP, UDP, and others, making it effective for analyzing and manipulating various network communications. Password sniffing: Ettercap has the capability to capture and analyze passwords transmitted over the network, which can be useful for security auditing and testing purposes. Plugin support: Ettercap supports a plugin architecture that allows users to extend its functionality. Numerous plugins are available for tasks such as SSL/TLS decryption, DNS spoofing, and session hijacking.
+
+
+ In a Slowloris attack, the attacker aims to exhaust the server's resources, such as available connections, rather than overwhelming it with a high volume of traffic. The attack takes advantage of the way web servers handle incoming connections and resource allocation. Here's how a Slowloris attack typically works: The attacker initiates multiple connections to the targeted web server, usually using a botnet or multiple compromised systems. For each connection, the attacker sends a partial HTTP request to the server, such as the request headers. However, the request is intentionally kept incomplete, with the attacker periodically sending additional header data to keep the connection open. The attacker keeps these connections open by sending small amounts of data at regular intervals, ensuring that the server keeps waiting for the complete request. This effectively ties up the server's resources, as it allocates memory and connection slots for each open connection. As the number of open connections increases, the server's capacity to handle new legitimate connections diminishes. Eventually, legitimate users trying to access the server may experience denial of service, as there are no available resources left to process their requests. Slowloris attacks can be effective because they exploit a vulnerability in how web servers allocate resources rather than overwhelming the network or server with a high volume of traffic. However, many modern web servers have implemented measures to mitigate Slowloris attacks and protect against such threats.
+|
+
+Ettercap is a comprehensive, open-source network security tool used for network packet sniffing, analysis, and man-in-the-middle attacks. It is designed to intercept and capture network traffic in real-time, allowing security professionals to analyze and manipulate data on a local network. Some key features of Ettercap include: Packet sniffing: Ettercap can capture network packets transmitted over the local network, enabling the analysis of protocols, data, and connections. Man-in-the-middle attacks: Ettercap can perform man-in-the-middle (MITM) attacks by intercepting and modifying network traffic between two communicating hosts. This allows it to monitor, alter, or inject packets into the communication, potentially leading to various security exploits. Protocol support: Ettercap supports a wide range of network protocols, including Ethernet, ARP, IP, TCP, UDP, and others, making it effective for analyzing and manipulating various network communications. Password sniffing: Ettercap has the capability to capture and analyze passwords transmitted over the network, which can be useful for security auditing and testing purposes. Plugin support: Ettercap supports a plugin architecture that allows users to extend its functionality. Numerous plugins are available for tasks such as SSL/TLS decryption, DNS spoofing, and session hijacking.
+|
+
+Firesheep was a cybersecurity tool released in 2010 that raised significant concerns about online security and privacy. It was created as a Firefox browser extension by developer Eric Butler. Firesheep was designed to demonstrate the inherent vulnerability of unencrypted websites that rely on HTTP rather than HTTPS for communication. It exploited a security weakness in the way many websites handle session management. When connected to the same unsecured Wi-Fi network as a target user, Firesheep could capture and display the session cookies of other users on that network. Session cookies are used to maintain a user's authentication status on a website. By capturing these cookies, Firesheep enabled an attacker to hijack another user's session and gain unauthorized access to their accounts on vulnerable websites. This meant that sensitive information, such as login credentials or personal data, could be compromised. The release of Firesheep brought attention to the importance of using secure HTTPS connections for web browsing, especially when accessing websites that require user authentication. Websites that implemented HTTPS encrypt the communication between the user's browser and the server, making it much more difficult for attackers to intercept and exploit session cookies. Following the release of Firesheep, many websites and online services began transitioning to HTTPS by default to enhance user security and protect against session hijacking attacks. This shift towards widespread HTTPS adoption has become a crucial aspect of online security.
+|
+
+Cisco Dynamic Trunking Protocol (DTP) is a Cisco proprietary protocol used to negotiate and dynamically establish trunk links between Cisco switches. Trunk links are network connections that carry traffic for multiple VLANs (Virtual Local Area Networks) over a single physical link. DTP operates on Cisco switches that support IEEE 802.1Q trunking, which is a standard for tagging VLAN traffic. DTP allows switches to automatically negotiate whether a link should be a trunk link or an access link, based on the capabilities of the connected device. When two switches connect, DTP frames are exchanged to determine the trunking mode. There are three possible DTP modes:Auto: In Auto mode, a switch is willing to become a trunk link if the connected switch is in the desirable or trunking mode. If the other end of the link is set to the access mode, the switch will become an access link. Desirable: In Desirable mode, a switch actively tries to convert the link into a trunk link. It will send DTP frames to negotiate with the other end of the link, and if that switch is in Auto or Desirable mode, a trunk link will be established. On: In On mode, the switch explicitly sets the link as a trunk link and does not send DTP frames. This mode disables DTP negotiation. The negotiation process facilitated by DTP occurs when switches are first connected or when changes are made to the switch port configuration. Once a trunk link is established, VLAN traffic can be tagged and transmitted between the switches. It's important to note that DTP is a Cisco proprietary protocol, meaning it is only compatible with Cisco switches. Other switch vendors may have their own trunking negotiation protocols or rely on industry-standard protocols like IEEE 802.1Q directly.
+|
+
+Trunk double tagging, also known as VLAN hopping or double VLAN tagging, is a security vulnerability that can occur in certain network configurations, particularly with trunk links that carry traffic for multiple VLANs. The vulnerability arises when an attacker on a switch port that is configured as an access port for one VLAN (let's call it VLAN A) is able to send packets that are double tagged with VLAN tags for both VLAN A and another VLAN (let's call it VLAN B). When these double-tagged packets reach a trunk port, the trunk port may process them as if they belong to VLAN B instead of VLAN A. This vulnerability can occur due to misconfigurations or weaknesses in the network infrastructure. If the trunk port is not properly configured to drop or ignore double-tagged packets, it may process and forward them to the incorrect VLAN, potentially allowing unauthorized access to the VLAN B traffic. The consequences of trunk double tagging can vary depending on the network setup and the specific actions an attacker can take within the compromised VLAN. However, in general, it can lead to unauthorized access to sensitive information or network resources within the affected VLAN. To mitigate trunk double tagging vulnerabilities, it is recommended to implement the following best practices: Disable Dynamic Trunking Protocol (DTP): DTP can be exploited by attackers to negotiate a trunk link. Disabling DTP reduces the risk of unauthorized trunking. Enable VLAN Access Control Lists (VACLs): VACLs allow you to define access control policies for VLANs, including filtering and blocking specific types of traffic. Implement Port Security: Port security features can be used to restrict the number of MAC addresses allowed on a port, limiting the risk of unauthorized access. Configure Proper Trunk Port Settings: Ensure that trunk ports are configured to drop or ignore double-tagged packets, preventing unauthorized VLAN hopping.
+|
+
+Private VLAN (PVLAN) port isolation, also known as PVLAN edge or protected port, is a feature that provides an additional layer of isolation and security within a VLAN. It restricts communication between ports within the same VLAN, effectively segregating and isolating traffic. In a traditional VLAN, all ports within the VLAN can communicate with each other. However, with PVLAN port isolation, ports are divided into two categories: isolated ports and community ports. Isolated Ports: Isolated ports can only communicate with uplink ports (typically connected to routers or servers) and cannot directly communicate with other ports within the same VLAN, including other isolated ports and community ports. This provides strict isolation for sensitive devices or hosts. Community Ports: Community ports can communicate with other community ports and with uplink ports. Communication is restricted to ports belonging to the same community within the VLAN. Community ports are useful for devices or hosts that need to communicate with specific group(s) within the VLAN. The goal of PVLAN port isolation is to enhance security by preventing direct communication between devices or hosts within the same VLAN. It can be particularly useful in environments where there is a need to isolate devices or hosts from each other, such as in a multi-tenant environment or a shared hosting environment. By using PVLAN port isolation, organizations can enforce strict communication boundaries and reduce the risk of unauthorized access or data leakage between devices within the same VLAN.
+|
+
+ITAD stands for IT Asset Disposal. It refers to the process of securely and responsibly disposing of end-of-life IT assets, such as computers, laptops, servers, networking equipment, and other electronic devices. ITAD involves the proper handling, data destruction, and environmentally friendly recycling or disposition of these assets. The primary goals of ITAD are: Data Security: Ensuring that sensitive data stored on the IT assets is securely erased or destroyed to prevent unauthorized access or data breaches. Compliance: Adhering to legal and regulatory requirements related to data privacy, environmental regulations, and disposal practices. Environmental Responsibility: Promoting environmentally sustainable practices by recycling electronic waste and minimizing the impact on the environment. The ITAD process typically includes the following steps: Asset Inventory and Evaluation: Identifying and cataloging all IT assets that require disposal. This involves assessing their condition, value, and potential data sensitivity. Data Sanitization or Destruction: Performing secure data sanitization or destruction to ensure that all data on the devices is permanently removed and cannot be recovered. This can involve methods such as data wiping, degaussing, or physical destruction of storage media. Remarketing or Resale: If the assets still have value, they may be refurbished, repaired, or sold to recover some of the investment. Recycling and Disposal: Assets that cannot be resold are properly recycled or disposed of in an environmentally friendly manner. This involves dismantling and separating components for recycling, complying with applicable regulations and industry best practices. Documentation and Reporting: Maintaining records of the entire ITAD process, including certificates of data destruction, recycling, and disposal, to demonstrate compliance and accountability. It's important to work with reputable ITAD service providers who follow industry standards, certifications, and best practices to ensure that sensitive data is properly handled and disposed of, and that electronic waste is managed in an environmentally responsible manner.
+|
+
+The Department of Defense (DoD) 5220.22-M standard refers to the data sanitization or data destruction method outlined in the National Industrial Security Program Operating Manual (NISPOM). This manual provides guidelines and requirements for the protection of classified information within the United States defense industry. DoD 5220.22-M specifies the procedures and requirements for sanitizing sensitive data on storage media before disposal or release from classified systems. The standard defines three data sanitization methods: Clearing: Clearing refers to overwriting data on storage media with a pattern of 0s and 1s, effectively removing any previously stored information. The standard specifies three overwriting passes with specific patterns, including one pass with a random character and two passes with alternating 0s and 1s. Purging: Purging involves sanitizing storage media by securely destroying data using cryptographic techniques or physical destruction methods. Cryptographic erasure typically involves encryption keys that render the data inaccessible. Physical destruction methods include disintegration, pulverization, melting, or shredding of the media. Degaussing: Degaussing is a method that applies a strong magnetic field to storage media, erasing the data by demagnetizing the magnetic storage components. Degaussing is typically used for magnetic media like hard drives or tapes. It's important to note that while DoD 5220.22-M has been a widely recognized and accepted standard for data sanitization, it is worth considering that technology and security practices have evolved since its publication in 1995. Many organizations now follow more advanced and rigorous data sanitization methods, such as those defined by the National Institute of Standards and Technology (NIST) Special Publication 800-88, which provides updated guidelines for media sanitization.
+|
+
+CVE stands for Common Vulnerabilities and Exposures. It is a standardized naming convention used to uniquely identify and track publicly known vulnerabilities in software and hardware systems. The CVE system is maintained and operated by the non-profit organization, the MITRE Corporation, in collaboration with various security researchers and organizations. Each CVE entry is assigned a unique identifier in the format "CVE-YYYY-NNNN," where "YYYY" represents the year of the vulnerability's assignment and "NNNN" is a sequential number. For example, "CVE-2021-1234" represents a vulnerability assigned in the year 2021 with the identifier 1234. The CVE system provides a common language and framework for security professionals, researchers, and vendors to reference and discuss specific vulnerabilities. It enables accurate communication, tracking, and information sharing about vulnerabilities across different organizations and platforms. CVE entries typically include the following information: CVE Identifier: The unique identifier assigned to the vulnerability. Description: A brief description of the vulnerability, including its impact and affected systems. References: Links to additional information, such as security advisories, patches, or research papers related to the vulnerability. CVSS Score: The Common Vulnerability Scoring System (CVSS) score, which provides a standardized method for assessing the severity and impact of the vulnerability. Vulnerable Products: A list of software or hardware products known to be affected by the vulnerability. CVE entries are widely used by security vendors, researchers, and organizations to track vulnerabilities, develop patches and updates, and prioritize security efforts. It helps in promoting transparency, collaboration, and a common understanding of vulnerabilities in the cybersecurity community. It's important to note that CVE entries only represent publicly known vulnerabilities and do not encompass all possible vulnerabilities that exist in software or hardware systems. Organizations should stay updated with security advisories and patches from vendors and security sources to mitigate potential risks associated with vulnerabilities.
+|
+
+A CVE Numbering Authority (CNA) is an organization that is authorized by the MITRE Corporation to assign CVE identifiers to vulnerabilities. CNAs play a crucial role in the CVE ecosystem by providing identifiers for vulnerabilities that are specific to their products, services, or research. The MITRE Corporation, which maintains the CVE system, delegates the authority to assign CVE identifiers to various organizations as CNAs. These organizations can be software vendors, security product companies, government agencies, research institutions, or any entity actively involved in vulnerability research and reporting. CNAs are responsible for the following: Assigning CVE Identifiers: CNAs assign unique CVE identifiers to vulnerabilities that they discover, analyze, or receive reports about. They follow the standardized format "CVE-YYYY-NNNN" for assigning identifiers. Coordinating with MITRE: CNAs collaborate with the MITRE Corporation to ensure that the assigned CVE identifiers are unique and properly documented within the CVE database. Vulnerability Documentation: CNAs provide detailed information about the vulnerabilities associated with the assigned CVE identifiers. This includes descriptions, impact analysis, affected software versions, patches, and other relevant information. Vulnerability Disclosure: CNAs work in accordance with responsible disclosure practices, which involve notifying affected vendors or parties about the vulnerability and providing them with sufficient time to address and release patches before public disclosure. By involving CNAs in the CVE assignment process, the workload of vulnerability identification and tracking is distributed across multiple organizations. This helps to ensure prompt identification and response to vulnerabilities, as well as more comprehensive coverage across different software and hardware products. It's important to note that the CVE system is a community-driven initiative, and participation as a CNA is subject to certain criteria and agreements with the MITRE Corporation. CNAs are expected to follow guidelines and best practices set forth by MITRE to maintain the integrity and usefulness of the CVE system.
+|
+
+Cisco Dynamic ARP Inspection (DAI) is a security feature available on Cisco Catalyst switches. It is designed to prevent ARP (Address Resolution Protocol) spoofing and other related attacks in local area networks (LANs). ARP is a protocol used to resolve IP addresses to MAC (Media Access Control) addresses in Ethernet networks. ARP spoofing occurs when an attacker sends falsified ARP messages, associating their MAC address with the IP address of another host on the network. This allows the attacker to intercept or manipulate network traffic intended for the targeted host. Dynamic ARP Inspection (DAI) helps mitigate ARP spoofing attacks by inspecting and validating ARP packets on the network. It operates in the following manner: ARP Packet Validation: DAI examines all ARP packets received on untrusted ports within the switch. Untrusted ports are typically those connecting to end-user devices. ARP Inspection Table: DAI maintains an ARP inspection table, which maps IP-MAC bindings of legitimate hosts on the network. The table is dynamically built by monitoring ARP traffic. ARP Packet Verification: When an ARP packet is received on an untrusted port, DAI compares the sender's IP-MAC binding in the packet with the entries in the ARP inspection table. If the mapping is invalid or does not exist, the packet is considered suspicious. ARP Packet Filtering: Suspicious ARP packets are either dropped or forwarded to the CPU for further analysis, depending on the switch configuration. This prevents unauthorized IP-MAC bindings from being accepted and propagated throughout the network. By validating and filtering ARP packets, DAI ensures that only legitimate ARP traffic is allowed, reducing the risk of ARP spoofing attacks and unauthorized network access. It's worth noting that DAI requires some initial setup and configuration. It involves designating ports as trusted or untrusted, enabling DAI on specific VLANs, and configuring the switch to build and maintain the ARP inspection table. Proper configuration and ongoing monitoring are necessary for DAI to effectively protect the network against ARP-related security threats.
+|
+
+DHCP snooping is a security feature available on network switches that helps protect against rogue DHCP (Dynamic Host Configuration Protocol) servers and unauthorized IP address assignments within a local area network (LAN). It operates by monitoring and filtering DHCP traffic on the network. The DHCP protocol is responsible for dynamically assigning IP addresses and other network configuration parameters to devices on a network. Rogue DHCP servers can be set up by attackers to maliciously assign IP addresses or distribute incorrect network settings, potentially leading to network connectivity issues or security breaches. Here's how DHCP snooping works: Trusted and Untrusted Ports: DHCP snooping classifies ports on a switch as trusted or untrusted. Trusted ports are those connected to legitimate DHCP servers, such as DHCP servers managed by the network administrator. Untrusted ports are those connected to end-user devices or potential rogue DHCP servers. DHCP Snooping Database: The switch maintains a DHCP snooping database, which includes information about IP-MAC address bindings learned from DHCP messages. DHCP Traffic Monitoring: DHCP snooping inspects DHCP messages exchanged between clients and servers on untrusted ports. It verifies the validity of the DHCP messages and checks if the IP-MAC bindings match the information stored in the DHCP snooping database. Filtering Unauthorized Traffic: If an unauthorized DHCP server is detected, or if DHCP messages with invalid IP-MAC bindings are identified, DHCP snooping takes action to mitigate the risk. This typically involves dropping or discarding the DHCP packets to prevent unauthorized IP address assignments. By using DHCP snooping, network administrators can ensure that only authorized DHCP servers are allowed to assign IP addresses and that clients receive correct network configuration information. It helps prevent potential network disruptions, IP address conflicts, and unauthorized access. It's important to note that DHCP snooping requires proper configuration and ongoing management. DHCP snooping should be implemented on all switches within the network, and trusted ports must be accurately defined to allow legitimate DHCP server communication. Regular monitoring of DHCP snooping logs and database maintenance is essential to maintain the effectiveness of the security measure.
+|
+
+Static bindings, in the context of networking, refer to manually configured associations between a specific IP address and a MAC address. These bindings are set in the network infrastructure, typically on devices such as routers, switches, or DHCP servers. In a typical network, devices obtain IP addresses dynamically through protocols like DHCP, which automatically assign IP addresses to devices on the network. However, in certain cases, static bindings may be preferred or necessary. Some scenarios where static bindings are used include: Servers and Network Devices: Servers, network appliances, or critical infrastructure devices may require consistent IP addresses for management or security reasons. Assigning static IP addresses to these devices ensures their IP address remains unchanged, simplifying network management and ensuring reliable connectivity. IP Address Reservation: In DHCP, it's possible to configure reservations where specific IP addresses are permanently assigned to specific devices based on their MAC addresses. This ensures that a particular device always receives the same IP address from the DHCP server. Virtualization Environments: In virtualized environments, static bindings can be used to assign specific IP addresses to virtual machines (VMs) or network interfaces to maintain consistent addressing within the virtual network. Network Security: Static bindings can be used as a security measure by allowing only authorized devices with specific MAC addresses to connect to the network. By configuring static MAC-to-IP associations, unauthorized devices attempting to use a different MAC address will be denied network access. When setting up static bindings, network administrators manually configure the association between a MAC address and an IP address in the device's configuration settings. This ensures that the specified IP address is always assigned to the associated MAC address, regardless of dynamic IP allocation methods like DHCP. It's important to note that managing static bindings can require additional administrative effort, especially in large networks. Regular maintenance and updates are necessary to ensure the accuracy of static binding configurations, especially if devices are added, removed, or their network addresses change.
+|
+
+In IPv6, Router Advertisement (RA) messages are periodically sent by routers on a network to provide essential network configuration information to neighboring devices. These messages assist in automatic address configuration, prefix delegation, and other network settings for IPv6-enabled devices on the network. The contents of an IPv6 Router Advertisement message include the following information: Router Lifetime: This field indicates the validity period of the Router Advertisement message. It specifies how long the information provided in the advertisement should be considered valid by the receiving devices. Flags: The RA message includes flags that indicate specific features or settings. For example, the Managed Address Configuration flag indicates whether devices should use stateless address autoconfiguration or rely on a DHCPv6 server for address assignment. Prefix Information: The RA message contains one or more prefix information options, which provide the prefixes for subnets within the network. These prefixes are used by devices to generate their own IPv6 addresses. Default Router Information: The RA message may include one or more default router options that indicate the presence of default gateways or routers on the network. Devices can use this information to determine the default gateway for outgoing IPv6 traffic. Route Information: Router Advertisement messages can include route information options, providing details about specific routes or prefixes that devices should use for communication. Other Options: RA messages can include additional options such as MTU (Maximum Transmission Unit) information, Recursive DNS Server (RDNSS) information, or other custom options for specific network configurations. When an IPv6-enabled device receives a Router Advertisement message, it processes the information contained within it to automatically configure its network settings. This includes generating its own IPv6 addresses based on the received prefixes, determining the default gateway, and setting up other network parameters. The Router Advertisement mechanism in IPv6 simplifies network configuration by allowing devices to automatically obtain essential network information without manual configuration. It supports dynamic network changes and promotes efficient and seamless communication in IPv6 networks.
+|
+
+NDP stands for Neighbor Discovery Protocol, which is a key protocol in the IPv6 suite. It is responsible for several functions related to address resolution, neighbor reachability detection, and automatic configuration in IPv6 networks. The Neighbor Discovery Protocol performs the following important tasks: Address Resolution: NDP replaces the Address Resolution Protocol (ARP) used in IPv4. It allows devices to map IPv6 addresses to their corresponding link-layer MAC addresses. This process is achieved through the use of Neighbor Solicitation (NS) and Neighbor Advertisement (NA) messages. Neighbor Unreachability Detection: NDP provides a mechanism for devices to determine the reachability of neighboring devices on the same network. By periodically exchanging Neighbor Solicitation and Neighbor Advertisement messages, devices can verify the presence and accessibility of their neighbors. Router Discovery: NDP assists in the automatic detection and configuration of routers on an IPv6 network. Routers send Router Advertisement (RA) messages to announce their presence and network configuration parameters. Hosts listen to these messages to learn about available routers, default gateway information, and other network-related details. Stateless Address Autoconfiguration: NDP supports the stateless address autoconfiguration feature in IPv6. Devices can automatically generate their own IPv6 addresses using prefixes received in Router Advertisement messages. This eliminates the need for DHCP (Dynamic Host Configuration Protocol) for basic address assignment. Duplicate Address Detection: Prior to assigning an IPv6 address, NDP facilitates the Duplicate Address Detection (DAD) process. This ensures that no other device is already using the same address on the network, helping to prevent address conflicts. Overall, NDP plays a vital role in facilitating efficient and self-configuring IPv6 networks. It provides mechanisms for address resolution, neighbor reachability detection, and router discovery, enabling devices to dynamically configure and communicate on an IPv6 network without heavy reliance on manual configuration or central address management.
+|
+
+Router Advertisement (RA) Guard is a security feature implemented on network switches to protect against rogue or unauthorized routers sending Router Advertisement messages on a local network. It helps prevent potential disruptions or security risks caused by unauthorized or malicious routers attempting to provide network configuration information. Router Advertisement Guard operates by monitoring and filtering incoming Router Advertisement messages on switch ports. It distinguishes between legitimate routers (trusted) and potentially rogue or unauthorized routers (untrusted). The key functionality of Router Advertisement Guard includes: Trusted and Untrusted Ports: Switch ports are categorized as trusted or untrusted. Trusted ports are typically connected to authorized routers within the network, while untrusted ports are those that should not receive Router Advertisement messages from unauthorized sources. Filtering Router Advertisement Messages: Router Advertisement Guard inspects incoming Router Advertisement messages on untrusted ports and verifies their legitimacy. If an untrusted port receives a Router Advertisement message, it is dropped or filtered to prevent unauthorized network configuration updates. Protection against Rogue Routers: By discarding or filtering Router Advertisement messages from unauthorized sources, Router Advertisement Guard helps prevent rogue routers from disrupting network operations, causing address conflicts, or attempting to misdirect network traffic. Router Advertisement Guard provides an additional layer of defense to mitigate potential security risks and maintain the integrity of network configuration. It ensures that only authorized routers are allowed to provide network information and helps prevent unauthorized devices from taking control of network settings. It's worth noting that Router Advertisement Guard is typically implemented on switches that support IPv6 and the Neighbor Discovery Protocol (NDP), as Router Advertisement messages are specific to IPv6 networks. The feature may be configurable on managed switches, and administrators should properly configure trusted and untrusted ports based on their network topology and authorized router locations.
+|
+
+Control Plane Policing (CoPP) is a security mechanism implemented on networking devices, such as routers or switches, to protect the control plane from excessive or malicious traffic. The control plane is responsible for managing and maintaining the device's routing, switching, and management functions. CoPP enables network administrators to define policies and limits on the types and amounts of traffic that can reach the control plane. By doing so, it helps prevent network disruptions, resource exhaustion, and potential attacks that could compromise the device's stability or security. Here's how Control Plane Policing typically operates: Traffic Classification: CoPP identifies and classifies traffic based on specific criteria, such as source/destination IP addresses, protocols, port numbers, or other packet attributes. This allows administrators to define different policies for different types of traffic. Traffic Policing: Once traffic is classified, CoPP enforces limits on the amount of traffic that can be sent to the control plane. It can define thresholds for traffic rates, burst sizes, or other parameters to control the flow of packets. Traffic Filtering: CoPP can also apply access control rules or filters to allow or deny specific types of traffic from reaching the control plane. This helps block potentially malicious or unnecessary traffic, reducing the load on the control plane. By implementing CoPP, network administrators can: Protect against distributed denial-of-service (DDoS) attacks targeting the control plane by limiting the rate of traffic that can be processed. Mitigate the impact of control plane resource exhaustion due to excessive or unauthorized traffic. Prioritize critical control plane traffic, ensuring that essential management and routing functions are not disrupted by less important traffic. It's important to note that CoPP configuration should be carefully planned and tested to avoid inadvertently blocking legitimate traffic or affecting normal network operations. Properly defining traffic classification, policing thresholds, and access control rules is essential to strike the right balance between security and operational requirements.
+|
+
+Control plane policing uses QoS to stop DoS attacks
+|
+
+Router open to Internet traffic is called a bastion host.
+|
+
+Host-based software firewall on individual stations.
+|
+
+A state table, also known as a connection table or session table, is a data structure maintained by networking devices, such as firewalls or routers, to track the state and context of network connections passing through the device. It is an essential component of stateful packet inspection, which is a method used to inspect and filter network traffic based on the connection's state. The state table keeps track of various information related to each network connection, including: Source and Destination IP addresses: The IP addresses of the source and destination devices involved in the connection. Source and Destination port numbers: The port numbers associated with the source and destination applications or services. Protocol: The network protocol (e.g., TCP, UDP) used for the connection. Connection State: The current state of the connection, such as established, ongoing, or terminated. Timeout Values: Timers associated with the connection to determine its duration and expiration if no activity is detected. Flags or Flags-related Information: Additional information specific to the connection, such as TCP flags (e.g., SYN, ACK) or other protocol-specific flags. By maintaining the state table, networking devices can efficiently perform stateful inspection of network traffic. Stateful inspection involves analyzing incoming and outgoing packets in the context of the established connections to make more informed filtering decisions. This enables the device to allow or deny traffic based on factors like connection initiation, established sessions, and the order and timing of packets within a connection. The state table is continuously updated as new connections are established, existing connections are modified, or connections are terminated. It allows the networking device to maintain context and track the progress of connections, enabling more sophisticated and effective network security measures. State tables are crucial for firewalling, network address translation (NAT), load balancing, and other network services that require understanding the state of network connections to enforce security policies or efficiently route traffic.
+|
+
+Deep Packet Inspection (DPI) is a network analysis technique used by firewalls, intrusion detection and prevention systems (IDS/IPS), and other network security devices to examine the contents of network packets at a deep level. It goes beyond simple packet header inspection and analyzes the payload or content of the packets to gain detailed insights into the network traffic. DPI involves the following key aspects: Packet Inspection: DPI examines the entire contents of individual packets, including the payload or data portion, rather than just focusing on the packet headers. This allows for more granular analysis of network traffic. Protocol Analysis: DPI understands the various protocols encapsulated within the packets, such as HTTP, FTP, SMTP, or DNS. It can identify protocol-specific characteristics and behaviors, making it effective for protocol-specific threat detection or performance optimization. Content Analysis: DPI can inspect the actual content within the payload of packets, including URLs, email attachments, file transfers, or other data types. This enables the detection of malicious content, unauthorized data transfers, or compliance violations. Signature and Pattern Matching: DPI uses signature or pattern matching algorithms to identify known patterns or signatures associated with specific threats, attacks, or network behaviors. It compares the content of packets against a database of signatures to detect anomalies or known malicious patterns. Traffic Management and Quality of Service (QoS): DPI can classify and prioritize traffic based on application or content type. It enables network administrators to enforce quality of service policies, control bandwidth usage, or apply traffic shaping techniques. DPI is a powerful technique for network security and performance optimization, as it provides deep visibility into network traffic. It allows for the detection of various threats, such as malware, intrusion attempts, data exfiltration, or policy violations. Additionally, DPI enables network administrators to gain insights into network behavior, application performance, and user activity. It's worth noting that DPI raises concerns related to privacy and network neutrality since it involves analyzing the content of network packets, potentially compromising user privacy or interfering with the free flow of network traffic. The use of DPI should adhere to legal and ethical guidelines, with proper consent and transparency.
+|
+
+Three types of firewalls - Stateless , Stateful and Context and application-aware firewalls filter based on the content of packets.
+|
+
+Zabbix and LIbreNMS, Grafana, Solarwinds
+|
+
+SNMP (Simple Network Management Protocol) is a protocol used for managing and monitoring network devices, such as routers, switches, and servers. SNMP employs a set of operations to retrieve and manipulate information from managed devices. Three commonly used operations are SNMP trap, SNMP walk, and SNMP get. SNMP Trap: SNMP traps are unsolicited notifications sent by network devices to a central network management system (NMS) to inform about specific events or conditions. Traps are triggered when predefined conditions, such as link failures, CPU utilization thresholds, or environmental alarms, occur. The NMS receives these traps and takes appropriate actions based on the information provided. SNMP Walk: SNMP walk is an operation that allows the NMS to retrieve multiple SNMP object values from a managed device in a hierarchical manner. It enables the NMS to gather information about an entire subtree of the SNMP Management Information Base (MIB). The walk operation starts at a specified root OID (Object Identifier) and retrieves the values of all OIDs under that subtree. SNMP Get: SNMP get is a basic SNMP operation used to retrieve the value of a specific SNMP object identified by its OID. The NMS sends an SNMP get request to the managed device, specifying the OID of the object it wants to retrieve. The device responds with the value of the requested object. In summary: SNMP trap is used by devices to send notifications to the NMS. SNMP walk is used by the NMS to retrieve multiple SNMP object values in a hierarchical manner. SNMP get is used by the NMS to retrieve the value of a specific SNMP object. These SNMP operations are essential for network management, monitoring, and troubleshooting, enabling administrators to gather real-time data, receive event notifications, and perform configuration changes on network devices.
+|
+
+snmp-server community totalhome RO (RO is read-only)
+|
+
+Cacti is a NMS SNMP needs community defined. A few NMS is Nagios, Zabbix, and Spiceworks.
+|
+
+SNMP managed devices run an agent that talks with a network management station (NMS)
+|
+
+SNMP uses UDP port 161 or port 10161 when using TLS.
+|
+
+Log Files - Is logging turned on? What are you asking the logging to log and do you have access to it?
+|
+
+
+
+Interactive SyslogViewer Correlation of data in a SIEM
+|
+
+Splunk ArcSight, ELK (Elasticsearch, Logstash, Kibana)
+
+A little trick for remembering the TIA568 A and B wiring layouts:
+
+1.) Odd numbers are stripes (Colour & white) & Even numbers are solid (Colour)
+2.) A is for Apples and are green, therefore; T568A starts with green. 
+3.) Blue become before brown alphabetically as well as in the wiring layout.
+
+Not sure why but the above has helped me remember the layouts for the last year or so :)
+
+
+CompTIA CertMaster Practice: If you want to feel like you've not learned anything and have your ego beat into the ground, this is the practice platform for you. I found that the practice exams and section exams were 5-10x harder than the actual exam. They word questions in extremely difficult ways to make you second guess your decisions. The also do not tell you if a multiple select question has 2 or 3 options. The actual exam will tell you "select 2" or "select 3" for the multiple select questions. They are worried someone might guess how to score the test so the don't use the same grading scale. For example I missed 1 PBQ (performance based question) and failed the practice because it was worth 33% of the overall score. This is not the case with the actual exam. Cost: $189* I did not pay this amount because it was included with the purchase of my Network+ exam voucher.
+
+These are the only resources I used for training. I trained for 5 weeks only studying about 6 hours a day for 3 days a week. This was enough for me. I passed my Network+ N10-008 with a 756 or 84% of all possible points. You need at least 720 out of 900 to pass. I had 3 PBQ's and only 74 questions total. The test is extremely difficult but can easily be passed if you have done the required training. The biggest sections per there study guide are Fundamentals and Troubleshooting. Definitely make sure you know those areas and read the official N10-008 study guide. Here is the URL: https://partners.comptia.org/docs/default-source/resources/comptia-network-n10-008-exam-objectives-(2-0)
+
+Good luck everyone and don't worry, if you study hard or follow the path I have you will be more than ready! Don't get in your own head, you'll do great!
+
+Notes:
+
+FTP tcp/20 (active mode data) tcp/21 (control)
+
+SFTP tcp/22
+
+ssh tcp/22
+
+telnet tcp/23
+
+SMTP tcp/25 TLS encrypted tcp/587
+
+DNS udp/53 large transfers use tcp/53
+
+DHCP udp/67 (servers) udp/68 (clients)
+
+TFTP udp/69
+
+HTTP tcp/80
+
+HTTPS tcp/443
+
+POP3 tcp/110 TLS encrypted tcp/995
+
+NTP udp/123
+
+IMAP4 tcp/143 TLS encrypted tcp/993
+
+SNMP udp/161
+
+SNMP udp/162 SNMP traps
+
+SMB tcp/445 (NetBIOS-less)
+
+syslog udp/514
+
+LDAP tcp/389
+
+LDAPS tcp/636 LDAP over SSL
+
+SQL tcp/1433 microsoft SQL server
+
+SQL tcp/1521 SQLnet from Oracle
+
+SQL tcp/3306 MySQL
+
+RDP tcp/3389
+
+SIP tcp/5060 tcp/5061 signaling for VoIP
+
+Network Troubleshooting notes:
+
+It's Broke!
+
+Identify the Problem (gather info)
+
+Establish a Theory (question the obvious)
+
+Test the theory (confirm it is the issue)
+
+Evaluate Results: Is it working?
+
+Establish a Plan of Action
+
+Implement the Plan
+
+Verify Full System Functionlity
+
+Document Findings
+
+It works!
+
+Cabling:
+
+Twisted Pairs reduce crosstalk interference. more twist less interference
+
+10Base-T Cat3 100 meters (16Mbps max)
+
+20Mbps Cat4
+
+100BASE-T Cat5 100 meters
+
+1000Base-T Cat5e 100 meters
+
+1000Base-SX MMF 220-500 meters
+
+1000Base-LX SMF 5km (70km with repeaters)
+
+10GBase-T Cat6 55 meters
+
+10GBase-T Cat6A 100 meters
+
+10GBase-T Cat7 100 meters (shielded only)
+
+40GBase-T Cat8 30 meters (shielded only)
+
+Coax RG-6 or RG-59 rated at 75 Ohms
+
+Twinaxial DAC (direct attached cable) used to substitute for short fiber connections in a rack (such as switches)
+
+WiFi standards and limits:
+
+	Bandwidth (theoretical maximum) Throughput is the actual max
+802.11a 5GHz max 54Mbit/s
+
+802.11b 2.4GHz max 11Mbit/s
+
+802.11g 2.4GHz max 54Mbit/s
+
+802.11n Both max 600Mbit/s (40MHz with 4 antennas) 4 x MIMO (Wi-Fi 4) 150Mbit/s per stream
+
+802.11ac 5GHz max 1Gbit/s theortical max 6.9Gbit/s (up to 160MHz) 8 x MU-MIMO Download only (Wi-Fi 5) 867Mbit/s per stream
+
+802.11ax Both max 1Gbit/s theortical max 9.6Gbit/s (up to 160MHz) 8 x MU-MIMO bi-directional 1,201Mbit/s per stream
+
+IEEE 802 standards:
+
+802.1 Higher Layer LAN Protocols
+
+802.3 Ethernet
+
+802.11 Wireless LAN (WLAN); specifications, such as Wi-Fi, etc.
+
+802.15 Wireless Personal Area Network (WPAN)
+
+802.18 Radio Regulatory Technical Advisory Group
+
+802.19 Wireless Coexistence Working Group
+
+802.24 Vertical Applications Technical Advisory Group
+
+More 802 Specifics:
+
+801.q - defines VLAN (trunking) tagging for Ethernet frames and the accompanying procedures to be used by bridges and switches in handling such frames
+
+802.1d - The Spanning Tree Protocol (STP) is a network protocol that builds a loop-free logical topology for Ethernet networks to prevent bridge loops and the broadcast storms that result from them
+
+802.3ad - Link Aggregation Control Protocol or LACP provides guidance on the practice of link aggregation for data connection.
+
+802.3af - Power over Ethernet (POE) is a technology that lets network cables carry electrical power
+
+802.1x - is a network authentication protocol that opens ports for network access when an organization authenticates a user's identity and authorizes them for access to the network. This defines port security. The user's identity is determined based on their credentials or certificate, which is confirmed by the RADIUS or TACACS+ server.
+
+Severity Levels:
+
+Level 0 - is for an emergency and is considered the most severe condition because the system has become unstable.
+
+Level 1 - is for an alert condition and means that there is a condition that should be corrected immediately.
+
+Level 2 - is for a critical condition, and it means there is a failure in the system’s primary application and it requires immediate attention.
+
+Level 3 - is for an error condition, and it means that something is happening to the system that is preventing the proper function.
+
+Level 4 - is for warning conditions and it may indicate that an error will occur if action is not taken soon.
+
+Level 5 - is for notice conditions and it means that the events are unusual, but they are not error conditions.
+
+Level 6 - is for information conditions and it is a normal operational message that requires no action.
+
+Level 7 - is for debugging conditions and is information that is useful to developers as they are debugging their networks and applications.
+
+OSI model:
+
+Layer 7 Application - API's
+
+Layer 6 Presentation - Data conversion
+
+Layer 5 Session - Session tracking/naming
+
+Layer 4 Transport - Segmentation/reassembly
+
+Layer 3 Network - Router and IP addressing
+
+Layer 2 Data Link - Switch, NIC, and MAC addressing
+
+Layer 1 Physical - Cabling and Hubs
+
+Encapsulation:
+
+Encapsulation takes place layers 7 to 1 and De-capsulation takes place layers 1-7
+
+Relies on PDU (Protocol Data Unit): transmission units
+
+MTU (Maximum Transmission Unit): Maximum IP packet to transmit but not fragment, standard max size 1500 bytes
+
+The max ICMP size is 1472 bytes: MTU minus ICMP Header (8bytes) minus IP Header (20bytes)
+
+Layers 5,6,7 Application: Application Data
+
+TCP or UDP begins encapsulation as segments at the Layer 4 Transport: TCP Header | Application Data
+
+TCP flags are inside the TCP Header known as control flags: SYN, PSH, RST, FIN, etc.
+
+encpsulation continues at Layer 3 Network as packets: IP Header | TCP Header | Application Data
+
+IP Header:
+
+next we have Layer 2 Data Link providing ethernet frames: DLC Header | IP Header | TCP Header | Application Data | Frame Trailer
+
+DLC Header:
+
+Lastly the Layer 1 Physical provides the binary output to be read by hardware.
+
+Ethernet Frames:
+
+Preamble | SFD | Destination MAC | Source MAC | Type | Payload | FCS
+
+when trunking the addition of a VLAN header is used. 12 bits long 4,094 VLANS possible. "Normal" range 1-1005 "Extended" 1006-4094
+
+Preamble | SFD | Destination MAC | Source MAC | VLAN | Type | Payload | FCS
+
+Common CISCO commands:
+
+show interface - used on a Cisco networking device to display the statistics for a given network interface.
+
+show configuration - used on a Cisco networking device to display the device's current configuration.
+
+show route - used on a Cisco networking device to display the current state of the routing table for a given network device.
+
+show diagnostic - used on a Cisco networking device to display details about the hardware and software on each node in a networked device.
+
+SNMP basics:
+
+The Simple Network Management Protocol (SNMP) uses ports 161 and 162, and it is a networking protocol used for the management and monitoring of network-connected devices in Internet Protocol networks. A trap is an asynchronous notification from the agent to the manager. A trap is sent by the agent to notify the management of a significant event that is occurring in real-time, such as an alarming condition. A granular trap contains a unique object identifier (OID) number and a value for that OID. A verbose trap may contain all the information about a given alert or event as its payload. A verbose trap contains more information and data than a granular trap, and therefore requires more bandwidth to send the verbose trap over the network. A unique objective identifier (OID) identifies a variable that can be read or set using the SNMP protocol. The management information base (MIB) is a translation file that is used to describe the structure of the management data of a device subsystem using a hierarchical namespace containing object identifiers (OID).
+
+Useful Protocol info:
+
+Border Gateway Protocol is a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems on the Internet. The Routing Information Protocol (RIP) is an Interior Gateway Protocol (IGP) designed to distribute routing information within an Autonomous System (AS). Open Shortest Path First (OSPF) is an Interior Gateway Protocol (IGP) designed as a link-state routing protocol and is based on the Shortest Path First (SPF) algorithm. Enhanced Interior Gateway Routing Protocol (EIGRP) is an Interior Gateway Protocol (IGP) designed as an advanced distance-vector routing protocol used on a computer network for automating routing decisions and configuration.
+
+Software Defined Networking (SDN):
+
+The control layer uses the information from applications to decide how to route a data packet on the network and to make decisions about how traffic should be prioritized, how it should be secured, and where it should be forwarded to. The application layer focuses on the communication resource requests or information about the network. The infrastructure layer contains the physical networking devices that receive information from the control layer about where to move the data and then perform those movements. The management plane is used to monitor traffic conditions, the status of the network, and allows network administrators to oversee the network and gain insight into its operations.
+
+Risk:
+
+A risk results from the combination of a threat and a vulnerability. A vulnerability is a weakness in a device, system, application, or process that might allow an attack to take place. A threat is an outside force that may exploit a vulnerability. Remember, a vulnerability is something internal to your organization's security goals. Therefore, you can control, mitigate, or remediate a vulnerability.
+
+ESSID vs BSSID:
+
+With an ESSID (Extended Service Set), a wireless network can utilize multiple wireless access points to broadcast a single network name for access by the clients. A BSSID (Basic Service Set) can only utilize a single access point in each wireless network.
+
+Accronyms:
+
+Ad hoc networking- devices connect directly without pre-existing infrastructure
+
+BGP- boarder gateway protocol
+
+CSU/DSU- A CSU/DSU (Channel Service Unit/Data Service Unit) is a hardware device about the size of an external modem that converts digital data frames from the communications technology used on a local area network (LAN) into frames appropriate to a wide-area network (WAN) and vice versa. A CSU/DSU is used to terminate a T1 connection at the customer's site
+
+NAT- Network address translation (NAT) is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device.
+
+AS- A collection of networks within the same administrative domain is called an autonomous system
+
+DaaS- Desktop as a service
+
+LACP- The Link Aggregation Control Protocol (LACP) provides a method to control the bonding of several physical ports to form a single logical channel. The LACP is defined in the 802.3ad standard.
+
+LLDP- The Link Layer Discovery Protocol (LLDP) is a vendor-neutral link layer protocol used by network devices for advertising their identity, capabilities, and neighbors on an IEEE 802 local area network, principally wired Ethernet.
+
+L2TP- The Layer 2 Tunneling Protocol (L2TP) is a tunneling protocol used to support virtual private networks (VPNs) or as part of the delivery of services by ISPs.
+
+LDAP- The Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral, industry-standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol network.
+
+HIDS- A host-based intrusion detection system is a form of network security that works to detect identified threats.
+
+NAC- Network Access Control (NAC) is an approach to computer security that attempts to unify endpoint security technology (such as anti-virus, host intrusion prevention, and vulnerability assessment), user or system authentication, and network security enforcement. When a remote workstation connects to the network, NAC will place it into a segmented portion of the network (sandbox), scan it for malware and validate its security controls, and then based on the results of those scans, either connect it to the company’s networks or place the workstation into a separate quarantined portion of the network for further remediation.
+
+PAP- Password Authentication Protocol (PAP) is a password-based authentication protocol used by Point-to-Point Protocol (PPP) to validate users
+
+MPLS- Multi-protocol label switching (MPLS) is a mechanism used within computer network infrastructures to speed up the time it takes a data packet to flow from one node to another
+
+mGRE- Multipoint GRE (mGRE) is a protocol that can be used to enable one node to communicate with many nodes by encapsulating layer 3 protocols to create tunnels over another network. The mGRE protocol is often used in Dynamic Multipoint VPN (DMVPN) connections
+
+EIGRP- Enhanced Interior Gateway Routing Protocol (EIGRP) is an advanced distance-vector routing protocol that is used on a computer network for automating routing decisions and configuration, finding the fastest route no matter the distance. Uses split-horizon to avoid routing loops.
+
+PPP- Point-to-Point Protocol (PPP) is a TCP/IP protocol that is used to connect one computer system to another. Computers use PPP to communicate over the telephone network or the Internet
+
+RAS- A remote access server (RAS) or remote desktop gateway is a type of server that provides a suite of services to connect users to a network or the Internet remotely.
+
+RADIUS- A Remote Authentication Dial-in User Service (RADIUS) server provides AAA management for users connecting to a wired or wireless network, which includes the ability to authenticate users.
+
+DHCP relay - allows a router to accept a broadcast from a host and send a unicast address to a specific DHCP server address. This DHCP address is known as a "IP helper" address or "UDP helper" address
+
+MDI vs MDI-X:
+
+Network interface cards are MDI or Media Dependent Interface devices
+
+Network switches are MDI-X or Media Dependent Interface Crossover devices
+
+a cross over cable is needed when connecting 2 MDI or 2 MDI-X to one another
+
+The majority of the questions focused on topics such as VLANs, LACP (Link Aggregation Control Protocol), warm and hot sites, VPN (Virtual Private Network) security features, and the various generations of 802.11 Wi-Fi standards. It was important to have a solid understanding of these areas to do well on the exam.
+One key recommendation I have is to memorize CIDR (Classless Inter-Domain Routing). This knowledge can be a lifesaver when dealing with networking tasks.
+
+I would put it in a standard three-fund portfolio,, i.e. 45% VTSAX, 30% VTIAX, 25% VBTLX.
+
+Notes:
+
+SMTP tcp/25 TLS encrypted tcp/587
+DHCP udp/67 (servers) udp/68 (clients)
+TFTP udp/69
+IMAP4 tcp/143 TLS encrypted tcp/993
+SNMP udp/161
+SNMP udp/162 SNMP traps
+SMB tcp/445 (NetBIOS-less)
+syslog udp/514
+LDAP tcp/389
+LDAPS tcp/636 LDAP over SSL
+SQL tcp/1433 microsoft SQL server
+SQL tcp/1521 SQLnet from Oracle
+SQL tcp/3306 MySQL
+SIP tcp/5060 tcp/5061 signaling for VoIP
+
+
+Cabling:
+
+
+
+10Base-T Cat3 100 meters (16Mbps max)
+20Mbps Cat4
+100BASE-T Cat5 100 meters
+1000Base-T Cat5e 100 meters
+1000Base-SX MMF 220-500 meters
+1000Base-LX SMF 5km (70km with repeaters)
+10GBase-T Cat6 55 meters
+10GBase-T Cat6A 100 meters
+10GBase-T Cat7 100 meters (shielded only)
+40GBase-T Cat8 30 meters (shielded only)
+
+Coax RG-6 or RG-59 rated at 75 Ohms
+
+Twinaxial DAC (direct attached cable) used to substitute for short fiber connections in a rack (such as switches)
+
+WiFi standards and limits:
+
+Bandwidth (theoretical maximum) Throughput is the actual max
+
+802.11a 5GHz max 54Mbit/s
+802.11b 2.4GHz max 11Mbit/s
+802.11g 2.4GHz max 54Mbit/s
+802.11n Both max 600Mbit/s (40MHz with 4 antennas) 4 x MIMO (Wi-Fi 4) 150Mbit/s per stream
+802.11ac 5GHz max 1Gbit/s theortical max 6.9Gbit/s (up to 160MHz) 8 x MU-MIMO Download only (Wi-Fi 5) 867Mbit/s per stream
+802.11ax Both max 1Gbit/s theortical max 9.6Gbit/s (up to 160MHz) 8 x MU-MIMO bi-directional 1,201Mbit/s per stream
+
+IEEE 802 standards:
+802.3 Ethernet
+802.11 Wireless LAN (WLAN); specifications, such as Wi-Fi, etc.
+
+
+
+
+E A C E W N I D 
+
+
+
+
+SNMP basics:
+
+The Simple Network Management Protocol (SNMP) uses ports 161 and 162, and it is a networking protocol used for the management and monitoring of network-connected devices in Internet Protocol networks. A trap is an asynchronous notification from the agent to the manager. A trap is sent by the agent to notify the management of a significant event that is occurring in real-time, such as an alarming condition. A granular trap contains a unique object identifier (OID) number and a value for that OID. A verbose trap may contain all the information about a given alert or event as its payload. A verbose trap contains more information and data than a granular trap, and therefore requires more bandwidth to send the verbose trap over the network. A unique objective identifier (OID) identifies a variable that can be read or set using the SNMP protocol. The management information base (MIB) is a translation file that is used to describe the structure of the management data of a device subsystem using a hierarchical namespace containing object identifiers (OID).
+
+Useful Protocol info:
+
+Border Gateway Protocol is a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems on the Internet. The Routing Information Protocol (RIP) is an Interior Gateway Protocol (IGP) designed to distribute routing information within an Autonomous System (AS). Open Shortest Path First (OSPF) is an Interior Gateway Protocol (IGP) designed as a link-state routing protocol and is based on the Shortest Path First (SPF) algorithm. Enhanced Interior Gateway Routing Protocol (EIGRP) is an Interior Gateway Protocol (IGP) designed as an advanced distance-vector routing protocol used on a computer network for automating routing decisions and configuration.
+
+Software Defined Networking (SDN):
+
+The control layer uses the information from applications to decide how to route a data packet on the network and to make decisions about how traffic should be prioritized, how it should be secured, and where it should be forwarded to. The application layer focuses on the communication resource requests or information about the network. The infrastructure layer contains the physical networking devices that receive information from the control layer about where to move the data and then perform those movements. The management plane is used to monitor traffic conditions, the status of the network, and allows network administrators to oversee the network and gain insight into its operations.
+
+ESSID vs BSSID:
+With an ESSID (Extended Service Set), a wireless network can utilize multiple wireless access points to broadcast a single network name for access by the clients. A BSSID (Basic Service Set) can only utilize a single access point in each wireless network.
+
+Accronyms:
+Ad hoc networking- devices connect directly without pre-existing infrastructure
+
+
+AS- A collection of networks within the same administrative domain is called an autonomous system
+
+
+LACP- The Link Aggregation Control Protocol (LACP) provides a method to control the bonding of several physical ports to form a single logical channel. The LACP is defined in the 802.3ad standard.
+
+LLDP- The Link Layer Discovery Protocol (LLDP) is a vendor-neutral link layer protocol used by network devices for advertising their identity, capabilities, and neighbors on an IEEE 802 local area network, principally wired Ethernet.
+
+L2TP- The Layer 2 Tunneling Protocol (L2TP) is a tunneling protocol used to support virtual private networks (VPNs) or as part of the delivery of services by ISPs.
+
+LDAP- The Lightweight Directory Access Protocol (LDAP) is an open, vendor-neutral, industry-standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol network.
+
+HIDS- A host-based intrusion detection system is a form of network security that works to detect identified threats.
+
+NAC- Network Access Control (NAC) is an approach to computer security that attempts to unify endpoint security technology (such as anti-virus, host intrusion prevention, and vulnerability assessment), user or system authentication, and network security enforcement. When a remote workstation connects to the network, NAC will place it into a segmented portion of the network (sandbox), scan it for malware and validate its security controls, and then based on the results of those scans, either connect it to the company’s networks or place the workstation into a separate quarantined portion of the network for further remediation.
+
+PAP- Password Authentication Protocol (PAP) is a password-based authentication protocol used by Point-to-Point Protocol (PPP) to validate users
+
+MPLS- Multi-protocol label switching (MPLS) is a mechanism used within computer network infrastructures to speed up the time it takes a data packet to flow from one node to another
+
+mGRE- Multipoint GRE (mGRE) is a protocol that can be used to enable one node to communicate with many nodes by encapsulating layer 3 protocols to create tunnels over another network. The mGRE protocol is often used in Dynamic Multipoint VPN (DMVPN) connections
+
+EIGRP- Enhanced Interior Gateway Routing Protocol (EIGRP) is an advanced distance-vector routing protocol that is used on a computer network for automating routing decisions and configuration, finding the fastest route no matter the distance. Uses split-horizon to avoid routing loops.
+
+PPP- Point-to-Point Protocol (PPP) is a TCP/IP protocol that is used to connect one computer system to another. Computers use PPP to communicate over the telephone network or the Internet
+
+RAS- A remote access server (RAS) or remote desktop gateway is a type of server that provides a suite of services to connect users to a network or the Internet remotely.
+
+RADIUS- A Remote Authentication Dial-in User Service (RADIUS) server provides AAA management for users connecting to a wired or wireless network, which includes the ability to authenticate users.
+
+DHCP relay - allows a router to accept a broadcast from a host and send a unicast address to a specific DHCP server address. This DHCP address is known as a "IP helper" address or "UDP helper" address
+
+MDI vs MDI-X:
+
+Network interface cards are MDI or Media Dependent Interface devices
+
+
+ "Zero-Emergencies Are Caused, Even When Noone Is Dally-dallying." 
+ 
+ Clientless VPN allows remote clients to connect to the internal web application securely without requiring the installation of any specific client software. This means that it can work on a wide range of devices, including smartphones, tablets, and computers, regardless of the operating system or platform.
+ avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 2 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 3 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 4 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 5 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 6 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 7 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 8 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 9 of 10: not in sync: resp=0x05
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 10 of 10: not in sync: resp=0x05
+Failed chip erase: uploading error: exit status 1
+
+I just got a Raspberry PI 5 and was interested in mining cryptocurrency.
+My setup includes three Arduino UNO boards connected to a Raspberry PI 400.
+
+
+qzzq4ujtv82q2360unr0tlpljly0ps4envh2uf6ay7
+
+Bitcoin Cash
+qzzq4ujtv82q2360unr0tlpljly0ps4envh2uf6ay7
+
+
+
+
+
+
+Bitcoin cash
+qz8uthjwaj7vrm5lz4ctmat75a2el2gsj5xu0y99ha
+
+qzu7809h8pz0sxd73qztffy4j73ksusg8cdwk8uzcl
+
+
+{"client":"73.178.62.7","ip":"162.212.157.226","name":"north-america-node-2","port":1641,"region":"NA","server":"svko","success":true}
+{"client":"73.178.62.7","ip":"162.212.157.226","name":"north-america-node-1","port":7391,"region":"NA","server":"svko","success":true}
+
+qp459vc84l2k23jp0fepkkddqluaguc42v6jtpcaln
+
+qrzgdvg7f4rtujsw5wu40p4fa2yjdxdwjcc74qmmq9
