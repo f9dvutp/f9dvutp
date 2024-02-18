@@ -1,7 +1,6 @@
 How to change Raspberry Pi resolution from command line?
 To change the resolution, run the command sudo raspi-config, navigate to Advanced Options > Resolution, and choose an option.
 
-
 lsb_release -a        - shows version of linux
 
 david@raspberrypi:~ $ lsb_release -a
@@ -21,7 +20,6 @@ sudo shutdown -h now
 david@raspberrypi:~ $ hostname -I
 10.0.0.241 2601:8c:417e:1bf0::dd9b 2601:8c:417e:1bf0:a1ed:26a7:5be0:a233
 david@raspberrypi:~ $
-
 
 lsusb          - find what you plugged including
 Bus 001 Device 007: ID 1a86:7523 QinHeng Electronics CH340 serial converter
@@ -52,7 +50,6 @@ david@raspberrypi:/dev $ python -m serial.tools.list_ports
 
 
 systemctl is-enabled apache2
-
 systemctl list-units --type=service --state=active
 
 
