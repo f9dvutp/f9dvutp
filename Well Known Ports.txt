@@ -1,0 +1,18 @@
+Well Known Ports
+
+Port Number	Protocol	Service	Explanation
+20	TCP	File Transfer Protocol (FTP) Data	FTP is a standard network protocol used to transfer files from one host to another over a TCP-based network, such as the Internet. The data port (port 20) is used for the transfer of actual file data.
+21	TCP	File Transfer Protocol (FTP) Control	The control port (port 21) is used to send control information, such as login credentials and commands to transfer files, between the FTP client and server.
+22	TCP	Secure Shell (SSH)	SSH is a secure network protocol used to remotely log into a networked device and execute commands. It provides secure encrypted communications between two untrusted hosts over an insecure network.
+23	TCP	Telnet	Telnet is a network protocol used for remote control of networked devices. It allows users to log into a remote device and run applications as if they were on the device's console.
+25	TCP	Simple Mail Transfer Protocol (SMTP)	SMTP is a simple, text-based protocol used to send email messages between servers. Most email systems that send mail over the Internet use SMTP to send messages from one server to another.
+53	TCP/UDP	Domain Name System (DNS)	DNS is a hierarchical and decentralized naming system for computers, services, or any resource connected to the Internet or a private network. It maps domain names to IP addresses, allowing users to access websites using human-readable names rather than IP addresses.
+67	UDP	Dynamic Host Configuration Protocol (DHCP) Server	DHCP is a network protocol used to dynamically assign IP addresses and other network configuration information to network devices. The DHCP server listens on port 67 and assigns IP addresses to clients on the network.
+68	UDP	Dynamic Host Configuration Protocol (DHCP) Client	The DHCP client listens on port 68 and sends requests to the DHCP server to obtain an IP address and other network configuration information.
+69	UDP	Trivial File Transfer Protocol (TFTP)	TFTP is a simple file transfer protocol used for uploading or downloading files from a remote network device. It operates on a client-server model and uses UDP as its transport protocol.
+80	TCP	Hypertext Transfer Protocol (HTTP)	HTTP is a widely used protocol for transmitting data over the Internet. It is the foundation of data communication for the World Wide Web.
+110	TCP	Post Office Protocol v3 (POP3)	POP3 is a simple mail protocol used to retrieve email messages from a remote mail server to a local client. It operates on a client-server model and uses TCP as its transport protocol.
+119	TCP	Network News Transfer Protocol (NNTP)	NNTP is a widely used protocol for distributing, reading, and posting Usenet news articles. It operates on a client-server model and uses TCP as its transport protocol.
+123	UDP	Network Time Protocol (NTP)	NTP is a networking protocol for clock synchronization between computer systems over packet-switched, variable-latency data networks.
+143	TCP	Internet Message Access Protocol (IMAP)	IMAP is a protocol for retrieving email messages from a mail server to a local client. It operates on a client-server model and uses TCP as its transport protocol.
+162	UDP	Simple Network Management Protocol (SNMP) Trap	SNMP is a widely used protocol for managing network devices and monitoring network performance. The trap port (port 162) is used to send unsolicited messages from
