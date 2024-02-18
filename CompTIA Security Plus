@@ -1756,6 +1756,23 @@ Commonly used by Windows Systems
 Use PFX and P12 file extensions
 Store in the P7b Format
 
+Tell me about mac flooding content addressable memory or kam table
+
+MAC Flooding is a type of network attack that is used to overload the Content Addressable Memory (CAM) table on a network switch. 
+CAM tables are used by network switches to store information about the MAC addresses of devices that are connected to the switch.
+In a MAC Flooding attack, the attacker sends a large number of fake MAC address packets to the switch, causing the CAM table to fill up quickly. 
+Once the CAM table is full, the switch can no longer function properly, and all network traffic is blocked.
+
+This attack is particularly effective against older switches that have a limited CAM table size, as newer switches have implemented countermeasures
+ to prevent this type of attack.
+Kernel Addressable Memory (KAM) table is similar to the CAM table, but it is used by routers to store information about the IP addresses of devices
+ that are connected to the network. A KAM table overflow attack will cause the same issue as CAM table overflow attack.
+ 
+What is double tagging on a switch
+Double tagging, also known as "Q-in-Q tagging" or "stacked VLAN tagging," is a technique used in networks to extend the number of VLANs (Virtual Local Area Networks) that can be supported on a switch.
+Normally, a switch can only support a limited number of VLANs, which are identified by a 12-bit VLAN ID. However, by using double tagging, an additional tag (referred to as a "Q-tag" or "service VLAN tag") is added to the original VLAN tag (referred to as a "customer VLAN tag"). This allows for an additional 12 bits of VLAN ID, effectively doubling the number of VLANs that can be supported on the switch.
+Double tagging is commonly used in service provider networks, where multiple customers are using the same physical infrastructure, and each customer needs to have their own set of VLANs. By using double tagging, the service provider can create a unique VLAN for each customer, while still being able to use the same physical infrastructure.
+This method of tagging is not as common as the traditional tagging (IEEE 802.1q tagging) but it is useful in certain situations.
 
 
 
