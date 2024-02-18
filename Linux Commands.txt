@@ -1,0 +1,98 @@
+How to change Raspberry Pi resolution from command line?
+To change the resolution, run the command sudo raspi-config, navigate to Advanced Options > Resolution, and choose an option.
+
+
+lsb_release -a        - shows version of linux
+
+david@raspberrypi:~ $ lsb_release -a
+No LSB modules are available.
+Distributor ID: Raspbian
+Description:    Raspbian GNU/Linux 11 (bullseye)
+Release:        11
+Codename:       bullseye
+
+journalctl -xe
+This command is used to view the end of the systemd journal, displaying the most recent log entries. The -x option will show additional information, including the source file and line number where a log entry originates, which can be helpful for troubleshooting. The -e option ensures you see the end of the journal rather than the entire journal.
+
+You might also be asked to perform other common tasks, such as filtering logs by time, service units, or log levels, or using different output formats. Make sure to be familiar with various journalctl options and parameters to effectively analyze and troubleshoot system logs.
+
+sudo shutdown -h now
+
+david@raspberrypi:~ $ hostname -I
+10.0.0.241 2601:8c:417e:1bf0::dd9b 2601:8c:417e:1bf0:a1ed:26a7:5be0:a233
+david@raspberrypi:~ $
+
+
+lsusb          - find what you plugged including
+Bus 001 Device 007: ID 1a86:7523 QinHeng Electronics CH340 serial converter
+[ 5056.588574] usb 1-1.3: New USB device found, idVendor=1a86, idProduct=7523, bcdDevice= 2.54
+[ 5056.236901] usb 1-1.1: Product: USB Gamepad 
+[ 5056.248751] input: USB Gamepad  as /devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:0079:0011.0005/input/input6
+[ 5056.249036] dragonrise 0003:0079:0011.0005: input,hidraw3: USB HID v1.10 Joystick [USB Gamepad ] on usb-0000:01:00.0-1.1/input0
+[ 5056.482094] usb 1-1.3: new full-speed USB device number 7 using xhci_hcd
+[ 5056.588574] usb 1-1.3: New USB device found, idVendor=1a86, idProduct=7523, bcdDevice= 2.54
+[ 5056.588606] usb 1-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+[ 5056.588613] usb 1-1.3: Product: USB2.0-Serial
+[ 5056.646530] usbcore: registered new interface driver usbserial_generic
+[ 5056.646575] usbserial: USB Serial support registered for generic
+[ 5056.649330] usbcore: registered new interface driver ch341
+[ 5056.649394] usbserial: USB Serial support registered for ch341-uart
+[ 5056.649473] ch341 1-1.3:1.0: ch341-uart converter detected
+[ 5056.656270] usb 1-1.3: ch341-uart converter now attached to ttyUSB0
+david@raspberrypi:~ $ 
+
+david@raspberrypi:~ $ ls -l /dev/ttyUSB0
+crw-rw---- 1 root dialout 188, 0 Oct 13 23:52 /dev/ttyUSB0
+
+david@raspberrypi:/dev $ python -m serial.tools.list_ports
+/dev/ttyAMA0        
+/dev/ttyUSB0        
+2 ports found
+
+
+
+systemctl is-enabled apache2
+
+systemctl list-units --type=service --state=active
+
+
+systemctl list-units --type=service --state=active 'dbus.service' 'dhcpcd.service' 'networking.service' 'ssh.service'
+
+
+journalctl -u apache2             (u stands for unit)
+
+systemctl list-unit-files --type=service --state=enabled | grep -v 'enabled-runtime'
+
+/password (or whatever keyword)
+
+journalctl --since "2020-12-28 10:24:00"
+journalctl -u ssh --since "2020-12-28 10:24:00"
+
+
+speaker-test -c 5 -t wav      - testing of speakers
+
+
+sudo apt update && sudo apt upgrade -y
+
+ -y means that will say yes to any prompts automatically. 
+
+curl -L https://install.pivpn.io | bash
+
+printenv - print all system variables
+UPPERCASE= Environmental Variable
+
+Control + Shift + Plus Sign Increase size of Terminal window.
+
+
+sudo nginx -t   (check configuration file)
+
+systemctl restart tor (restart a service like TOR)
+
+site:https://www.tiktok.com/@ raspberry pi 5
+
+
+hostname 
+date
+uptime
+
+
