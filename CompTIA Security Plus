@@ -2007,6 +2007,206 @@ generally accepted privacy principles (GAPP) in the context of data privacy. The
 These principles aim to provide a framework for organizations to manage personal information in a responsible and privacy-centric manner. It's important to note that different jurisdictions may have their own privacy laws and regulations, so organizations should also consider local legal requirements in addition to these principles.
 
 
+Professor Messer How to Pass your SYO-601 Security + Exam
+
+pretext - lie that sets up scenario for the attack.
+
+https://professormesser.link/twittername
+Passed the 501 first try thanks to you and Darril Gibson. 
+DarkComent RAT
+https://en.wikipedia.org/wiki/Necurs_botnet
+
+Secure Boot with UEFI - Security in the BIOS
+
+Malwarebytes Anti Malware.
+
+SCADA - Supervisory Control and Data Acquisition
+Unable to reverse a HASH
+8D969EEF6ECAD3C29A3A629280E686CF0C3F5D5A86AFF3CA12020C923ADC6C92
+https://en.wikipedia.org/wiki/List_of_the_most_common_passwords
+https://en.wikipedia.org/wiki/Wikipedia:10,000_most_common_passwords
+https://en.wikipedia.org/wiki/Collection_No._1
+
+Error code: SBOX_FATAL_MEMORY_EXCEEDED
+Webgoat
+
+Information gathering - Wireshark, Kismet
+Exploits - Cross Site Scripting
+Modify Headers, Tamper, Firesheep, Scapy
+
+Amazon S3 - Simple Storage Service
+Capital One SSRF breach March 2019
+
+
+Metamorphic malware - A different program each time its downloaded.
+
+
+NOP instructions - No Operations
+
+SSL Stripping / HTTP downgrade - Not going to a HTTPS site.
+
+SSL 3.0
+- Vulnerable to the POODLE Attack
+- Deprecated in June 2015
+
+SSL and TLS
+TLS 1.1 Deprecated in January 2020 by modern browsers
+TLS 1.2 and 1.3 are the latest standards.
+
+
+WIFI Pinapple
+Consider using 802.1x (network access control)
+
+802.1X is an IEEE standard for network access control (NAC) that provides a mechanism for authentication and authorization of devices that are attempting to connect to a network.
+
+It works by requiring users or devices to provide credentials, such as a username and password, before they are granted access to the network. The authentication process is typically performed by a server, such as a RADIUS server, which validates the credentials and sends a response to the network access device indicating whether access should be granted or denied.
+
+802.1X provides a way for network administrators to enforce security policies and control access to sensitive resources on the network. It can be used in wired and wireless networks, and supports a variety of authentication methods, including EAP (Extensible Authentication Protocol) and certificate-based authentication.
+
+Overall, 802.1X is a powerful tool for securing network access and ensuring that only authorized devices are allowed on the network.
+
+Bluejacking - Sending of unsolicited messages to another device via bluetooth.
+Third Paryt software - Blooover, Bluesniff
+
+Bluesnarfing - RECEIVE Access a Bluetooth device and tranfer data (receive) - Contact list, calendar, email pictures.
+
+802.11 Management Frames - Sent in the clear - no authentication or validation
+
+Raido Frequency (RF) jamming - interference from microwave, floresnce light
+Fox Hunting - Directional Antenna, attenuator
+
+NFC - Near Field Communication - Two way wireless - Payment systems
+
+For
+
+In CompTIA Security+, a nonce (number used once) is a random number that is generated and used only once for a specific cryptographic purpose, such as in the creation of a digital signature or in the encryption of data.
+
+A nonce is typically used to prevent replay attacks, which occur when an attacker intercepts and replays a message that was previously sent. By using a nonce, the sender can ensure that the message being sent is fresh and has not been intercepted and replayed by an attacker.
+
+In summary, a nonce is a one-time-use random number that is generated for security purposes and helps to prevent attacks.
+
+a salt is a random value that is added to a password before it is hashed. The primary purpose of a salt is to prevent attackers from using precomputed hash tables or rainbow tables to easily crack passwords.
+
+A salt is a random string of characters that is generated specifically for each password. The salt value is combined with the password before it is hashed, which creates a unique hash value for each password, even if two users have the same password.
+
+By using a salt, an attacker must use brute force to crack each password individually, rather than being able to use a precomputed hash table to crack many passwords at once. This makes it much more difficult for attackers to crack passwords, and it increases the security of password storage.
+
+
+OUI - Organizationally Unique Identifier (the manufacturer) - Last three bytes is the serial number
+
+Floodguard is a network security feature that helps protect against denial-of-service (DoS) attacks. Floodguard is a type of packet filtering technology that is designed to detect and block traffic that is suspected to be part of a DoS attack.
+
+Floodguard uses several techniques to detect and block DoS attacks, including rate limiting, traffic filtering, and pattern recognition. Rate limiting involves setting thresholds for the amount of traffic that can be sent to a particular network segment or device, and blocking traffic that exceeds these thresholds. Traffic filtering involves blocking traffic that matches certain criteria, such as traffic from a particular source IP address or port number. Pattern recognition involves analyzing traffic patterns and looking for anomalies that may indicate a DoS attack.
+
+Floodguard can be implemented using various types of network devices, such as firewalls, routers, and intrusion detection/prevention systems (IDS/IPS). By detecting and blocking DoS attacks, Floodguard helps ensure the availability and reliability of network resources.
+
+CVE - Common Vulnerabilities and Exposures (CVE)
+STIX - Structured Threat Information Expression
+TTP - Tactics, techniques and procedures
+
+Some protocols aren't encrypted - Such as Telnet, FTP, SMTP, IMAP
+Use encrypted versions such as SSH, SFTP, IMAPS
+
+WALL OF SHEEP
+The Mirai botnet is a type of malware that targets Internet of Things (IoT) devices, such as routers, cameras, and digital video recorders (DVRs), and uses them to launch large-scale distributed denial-of-service (DDoS) attacks.
+
+The Mirai botnet was first discovered in 2016 and is notable for its ability to infect and control large numbers of IoT devices. The malware works by scanning the internet for devices that have weak security or default passwords and then infects them with the Mirai botnet code. Once infected, these devices can be used to launch DDoS attacks on a target website or service by overwhelming it with traffic, causing it to become unavailable to legitimate users.
+
+The Mirai botnet has been responsible for several high-profile DDoS attacks, including one that targeted the DNS provider Dyn in 2016, causing widespread disruption to major websites such as Twitter, Spotify, and Reddit. Since then, several variants of the Mirai botnet have emerged, and it remains a significant threat to IoT devices and the internet as a whole
+
+The Equifax data breach that occurred in July 2017 was one of the largest data breaches in history. The breach exposed sensitive personal information of approximately 147 million people, including names, social security numbers, birth dates, addresses, and in some cases, driver's license numbers and credit card information.
+
+The breach was caused by a vulnerability in Equifax's website software, which allowed hackers to gain access to sensitive data. Equifax was criticized for its slow response to the breach and for its handling of the aftermath, including the delay in notifying affected individuals and the confusion around the company's response.
+
+As a result of the breach, Equifax faced numerous lawsuits and investigations from government agencies. The company agreed to a settlement of $700 million in 2019, which included payments to affected individuals, credit monitoring services, and penalties to be paid to government agencies.
+
+SOC - Security Operations Center
+SOAR - Security Orchestration, Automation, and Response
+
+Passive footprinting
+https://osintframework.com/
+KisMAC \, kismet, inssider, wireless geographic logging engine http://wigle.net
+https://mailvelope.com/en
+
+diffusion - Change one character of the input, and may characters change of the output.
+
+Tokenization - replace sensitve data with a non-sensitive placeholder.
+Such as SS# 
+
+IRM enables organizations to restrict access to specific information based on the user's identity, role, and permissions, as well as control what actions can be performed with that information, such as printing, copying, or forwarding.
+
+IRM typically involves the use of encryption, access controls, digital rights management (DRM) technologies, and policy-based controls to ensure that sensitive information is only accessed and used by authorized individuals, and is protected from unauthorized access, modification, or distribution.
+
+DLP - Data Loss Prevention.
+Short String - Message Digest.
+
+
+API considerations  - On-path attack
+Intercept and modify API messages, replay API commands.
+
+In CompTIA Security+, API injection refers to a type of attack where an attacker exploits vulnerabilities in an application's API (Application Programming Interface) to gain unauthorized access or control of the application or the system it's running on.
+
+APIs are designed to allow different software systems to communicate with each other. They typically use a set of protocols, routines, and tools to exchange data and functionality between different applications. However, if an API is not properly secured or validated, an attacker can use it to inject malicious code or commands into the system, leading to data theft, system compromise, or other forms of cyberattacks.
+
+API injection attacks can take many forms, such as SQL injection, command injection, buffer overflow, and cross-site scripting. To prevent API injection, developers and system administrators need to implement strong security controls, such as input validation, access controls, data encryption, and monitoring, among others. Additionally, regular security audits and testing can help identify and remediate vulnerabilities before attackers can exploit them.
+
+WAF - Web Application Firewall
+Different types of Honeypots - KIPPO, Google Hack Honeypot, Wordpot.
+
+HoneyNet - More than one honeypot on a network.
+https://projecthoneypot.org
+
+A SED (Self-Encrypting Drive) provides data protection of a storage device using full-disk encryption in the drive hardware.
+
+
+create 20 questions for the domain Remote Access - N10-008 CompTIA Network+ : 4.4 with answers
+
+give 20 more questions with answers, multiple choice
+
+
+
+A network technician is manually configuring the network settings for a new device and is told the network block is 192.168.0.0/20. Which of the following subnets should the technician use?
+A. 255.255.128.0
+B. 255.255.192.0
+C. 255.255.240.0 !
+D. 255.255.248.0
+
+According to troubleshooting methodology, which of the following should the technician do NEXT after determining the most likely probable cause of an issue?
+A. Establish a plan of action to resolve the issue and identify potential effects
+B. Verify full system functionality and, if applicable, implement preventive measures
+C. Implement the solution or escalate as necessary
+D. Test the theory to determine the cause Most Voted
+
+A technician is deploying a new switch model and would like to add it to the existing network monitoring software. The technician wants to know what metrics can be gathered from a given switch. Which of the following should the technician utilize for the switch?
+A. MIB Most Voted
+B. Trap
+C. Syslog
+D. Audit log
+
+
+emus are cute even when not in disguise
+
+SSH serves a similar function as a Site-to-site VPN, however SSH only operates at the Application Level. The VPN encrypts and protects all the data.
+A network administrator is designing a new datacenter in a different region that will need to communicate to the old datacenter with a secure connection. Which of the following access methods would provide the BEST security for this new datacenter?
+A. Virtual network computing
+B. Secure Socket Shell
+C. In-band connection
+D. Site-to-site VPN Most Voted
+
+Which of the following technologies provides a failover mechanism for the default gateway?
+First-hop
+redundancy protocols (FHRPs) work by giving you a way to configure more than
+one physical router to appear as if they were only a single logical one.
+ 
+
+first hop redundancy protocol (FHRP) is a computer networking protocol which is designed to protect the default gateway used on a subnetwork by allowing two or more routers to provide backup for that address
+
+FHRP is used to prevent network failure at a default gateway. This is achieved by configuring multiple routers with the same IP address and Mac address, thus presenting an illusion of a single virtual router to the hosts in a Local Area Network (LAN).
+
+SFP = 1Gbps
+SFP+ = 10 Gbps
+QSFP = 4xSFP = 4 Gbps
+QSFP+ = 4xSFP = 40 Gbps
 
 
 
